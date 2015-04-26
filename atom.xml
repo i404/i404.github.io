@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-04-25T17:27:48.327Z</updated>
+  <updated>2015-04-26T07:24:13.552Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[imageTest]]></title>
+    <link href="http://yoursite.com/2015/04/26/imageTest/"/>
+    <id>http://yoursite.com/2015/04/26/imageTest/</id>
+    <published>2015-04-26T07:13:42.000Z</published>
+    <updated>2015-04-26T07:24:13.552Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xipqt.com1.z0.glb.clouddn.com/45118886_p5_master1200.jpg" class="img-topic"><br><img src="http://7xipqt.com1.z0.glb.clouddn.com/45118886_p1_master1200.jpg" class="img-center"><br><img src="http://7xipqt.com1.z0.glb.clouddn.com/45118886_p2_master1200.jpg" class="img-shadow"><br><img src="http://7xipqt.com1.z0.glb.clouddn.com/33284590.jpg" alt="添加你的备注"></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xipqt.com1.z0.glb.clouddn.com/45118886_p5_master1200.jpg" class="img-topic"><br><img src="http://7xipqt.com1.z0.glb.clo]]>
+    </summary>
+    
+      <category term="Test" scheme="http://yoursite.com/categories/Test/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[photeTest]]></title>
