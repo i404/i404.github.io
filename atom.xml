@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2015-04-26T07:24:13.552Z</updated>
+  <updated>2015-04-26T07:34:24.792Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,12 +19,15 @@
     <link href="http://yoursite.com/2015/04/26/imageTest/"/>
     <id>http://yoursite.com/2015/04/26/imageTest/</id>
     <published>2015-04-26T07:13:42.000Z</published>
-    <updated>2015-04-26T07:24:13.552Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xipqt.com1.z0.glb.clouddn.com/45118886_p5_master1200.jpg" class="img-topic"><br><img src="http://7xipqt.com1.z0.glb.clouddn.com/45118886_p1_master1200.jpg" class="img-center"><br><img src="http://7xipqt.com1.z0.glb.clouddn.com/45118886_p2_master1200.jpg" class="img-shadow"><br><img src="http://7xipqt.com1.z0.glb.clouddn.com/33284590.jpg" alt="添加你的备注"></p>
+    <updated>2015-04-26T07:34:24.792Z</updated>
+    <content type="html"><![CDATA[<p>For Test<br><img src="http://7xipqt.com1.z0.glb.clouddn.com/45118886_p5_master1200.jpg" class="img-topic"><br><img src="http://7xipqt.com1.z0.glb.clouddn.com/45118886_p1_master1200.jpg" class="img-center"><br><a id="more"></a><br><img src="http://7xipqt.com1.z0.glb.clouddn.com/45118886_p2_master1200.jpg" class="img-shadow"><br><img src="http://7xipqt.com1.z0.glb.clouddn.com/33284590.jpg" alt="添加你的备注"></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p><img src="http://7xipqt.com1.z0.glb.clouddn.com/45118886_p5_master1200.jpg" class="img-topic"><br><img src="http://7xipqt.com1.z0.glb.clo]]>
+    <![CDATA[<p>For Test<br><img src="http://7xipqt.com1.z0.glb.clouddn.com/45118886_p5_master1200.jpg" class="img-topic" /><br><img src="http://7xipqt.com1.z0.glb.clouddn.com/45118886_p1_master1200.jpg" class="img-center" /><br>]]>
+    
     </summary>
+    
+      <category term="Test" scheme="http://yoursite.com/tags/Test/"/>
     
       <category term="Test" scheme="http://yoursite.com/categories/Test/"/>
     
@@ -35,22 +38,26 @@
     <link href="http://yoursite.com/2015/04/26/photoTest/"/>
     <id>http://yoursite.com/2015/04/26/photoTest/</id>
     <published>2015-04-25T16:49:29.000Z</published>
-    <updated>2015-04-25T17:27:48.327Z</updated>
-    <content type="html"></content>
+    <updated>2015-04-26T07:36:10.224Z</updated>
+    <content type="html"><![CDATA[<p>photo test</p>
+]]></content>
     <summary type="html">
-    
+    <![CDATA[<p>photo test</p>
+]]>
     </summary>
     
       <category term="Test" scheme="http://yoursite.com/tags/Test/"/>
     
+      <category term="Test" scheme="http://yoursite.com/categories/Test/"/>
+    
   </entry>
   
   <entry>
-    <title><![CDATA[test]]></title>
+    <title><![CDATA[mathjaxtest]]></title>
     <link href="http://yoursite.com/2015/04/23/test/"/>
     <id>http://yoursite.com/2015/04/23/test/</id>
     <published>2015-04-23T03:39:28.000Z</published>
-    <updated>2015-04-23T05:56:36.320Z</updated>
+    <updated>2015-04-26T07:35:43.616Z</updated>
     <content type="html"><![CDATA[<p>$$\int \alpha \sigma \pi \iota \sum $$<br>test</p>
 ]]></content>
     <summary type="html">
@@ -58,9 +65,9 @@
 ]]>
     </summary>
     
-      <category term="test" scheme="http://yoursite.com/tags/test/"/>
+      <category term="Test" scheme="http://yoursite.com/tags/Test/"/>
     
-      <category term="test" scheme="http://yoursite.com/categories/test/"/>
+      <category term="Test" scheme="http://yoursite.com/categories/Test/"/>
     
   </entry>
   
