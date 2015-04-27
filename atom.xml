@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://i404.github.io/"/>
-  <updated>2015-04-27T07:48:25.384Z</updated>
+  <updated>2015-04-27T08:31:46.607Z</updated>
   <id>http://i404.github.io/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <link href="http://i404.github.io/2015/04/27/Markdown/"/>
     <id>http://i404.github.io/2015/04/27/Markdown/</id>
     <published>2015-04-27T02:45:42.000Z</published>
-    <updated>2015-04-27T07:48:25.384Z</updated>
-    <content type="html"><![CDATA[<p><img src="http://7xipqt.com1.z0.glb.clouddn.com/markdown-logo.jpg" class="img-logo"><br>其实第一次让我写Markdown我是拒绝的。因为我觉得你不能叫我写我就写。首先我要试一下。于是为了熟悉一下语法，就先写了这一篇博客，感觉还不错，很简洁。<a id="more"></a></p>
+    <updated>2015-04-27T08:31:46.607Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xipqt.com1.z0.glb.clouddn.com/markdown-logo.jpg" class="img-logo"><br>其实第一次让我写Markdown我是拒绝的。因为我觉得你不能叫我写我就写。首先我要试一下。为了熟悉一下语法，就先写了这一篇博客，感觉还不错，很简洁。<a id="more"></a></p>
 <hr>
 <h2 id="Atx方式的标题">Atx方式的标题</h2><figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#的个数就代表几级标题</span></span><br><span class="line"><span class="preprocessor">#一级标题</span></span><br><span class="line"><span class="preprocessor">##二级标题</span></span><br><span class="line"><span class="preprocessor">###三级标题</span></span><br><span class="line"><span class="preprocessor">####四级标题</span></span><br><span class="line"><span class="preprocessor">#####五级标题</span></span><br><span class="line"><span class="preprocessor">######六级标题</span></span><br></pre></td></tr></table></figure>
 <blockquote>
@@ -93,7 +93,7 @@
 </blockquote>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">还有一种自动式的，加尖括号</span><br><span class="line">&lt;<span class="string">http:</span><span class="comment">//google.com&gt;</span></span><br><span class="line">&lt;linhaoisbr<span class="annotation">@gmail</span>.com&gt;</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p><a href="http://google.com" target="_blank" rel="external">http://google.com</a><br><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#x6c;&#105;&#110;&#x68;&#x61;&#x6f;&#x69;&#115;&#x62;&#x72;&#64;&#103;&#109;&#97;&#105;&#x6c;&#x2e;&#99;&#111;&#109;">&#x6c;&#105;&#110;&#x68;&#x61;&#x6f;&#x69;&#115;&#x62;&#x72;&#64;&#103;&#109;&#97;&#105;&#x6c;&#x2e;&#99;&#111;&#109;</a></p>
+<p><a href="http://google.com" target="_blank" rel="external">http://google.com</a><br><a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#58;&#108;&#x69;&#x6e;&#x68;&#97;&#x6f;&#x69;&#x73;&#98;&#114;&#64;&#103;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#108;&#x69;&#x6e;&#x68;&#97;&#x6f;&#x69;&#x73;&#98;&#114;&#64;&#103;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
 </blockquote>
 <h2 id="图片">图片</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">图片和链接十分相似啊，前面加一发!</span><br><span class="line">![<span class="link_label">Logo</span>](<span class="link_url">https://www.google.com.hk/images/srpr/logo11w.png "G"</span>)</span><br></pre></td></tr></table></figure>
 <p><img src="https://www.google.com.hk/images/srpr/logo11w.png" alt="Logo" title="G"></p>
@@ -113,93 +113,13 @@
 </code></pre><p><br><br><figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">还有一种就是上面用的最多的，黑框的都是。</span><br><span class="line">使用的时候去掉(),后面的语言是可选的。</span><br><span class="line">(<span class="escape">``</span><span class="escape">`)</span>bash</span><br><span class="line">代码块</span><br><span class="line">(<span class="escape">``</span><span class="escape">`)</span></span><br></pre></td></tr></table></figure></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p><img src="http://7xipqt.com1.z0.glb.clouddn.com/markdown-logo.jpg" class="img-logo" /><br>其实第一次让我写Markdown我是拒绝的。因为我觉得你不能叫我写我就写。首先我要试一下。于是为了熟悉一下语法，就先写了这一篇博客，感觉还不错，很简洁。]]>
+    <![CDATA[<p><img src="http://7xipqt.com1.z0.glb.clouddn.com/markdown-logo.jpg" class="img-logo" /><br>其实第一次让我写Markdown我是拒绝的。因为我觉得你不能叫我写我就写。首先我要试一下。为了熟悉一下语法，就先写了这一篇博客，感觉还不错，很简洁。]]>
     
     </summary>
     
       <category term="markdown" scheme="http://i404.github.io/tags/markdown/"/>
     
       <category term="Hexo" scheme="http://i404.github.io/categories/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[imageTest]]></title>
-    <link href="http://i404.github.io/2015/04/26/imageTest/"/>
-    <id>http://i404.github.io/2015/04/26/imageTest/</id>
-    <published>2015-04-26T07:13:42.000Z</published>
-    <updated>2015-04-26T07:41:12.411Z</updated>
-    <content type="html"><![CDATA[<p>For Test<br><img src="http://7xipqt.com1.z0.glb.clouddn.com/45118886_p5_master1200.jpg" class="img-topic"><br><img src="http://7xipqt.com1.z0.glb.clouddn.com/45118886_p1_master1200.jpg" class="img-center img-shadow"><br><a id="more"></a><br><img src="http://7xipqt.com1.z0.glb.clouddn.com/45118886_p2_master1200.jpg" class="img-shadow"><br><img src="http://7xipqt.com1.z0.glb.clouddn.com/33284590.jpg" alt="添加你的备注"></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>For Test<br><img src="http://7xipqt.com1.z0.glb.clouddn.com/45118886_p5_master1200.jpg" class="img-topic" /><br><img src="http://7xipqt.com1.z0.glb.clouddn.com/45118886_p1_master1200.jpg" class="img-center img-shadow" /><br>]]>
-    
-    </summary>
-    
-      <category term="Test" scheme="http://i404.github.io/tags/Test/"/>
-    
-      <category term="Test" scheme="http://i404.github.io/categories/Test/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[photeTest]]></title>
-    <link href="http://i404.github.io/2015/04/26/photoTest/"/>
-    <id>http://i404.github.io/2015/04/26/photoTest/</id>
-    <published>2015-04-25T16:49:29.000Z</published>
-    <updated>2015-04-26T08:02:40.501Z</updated>
-    <content type="html"><![CDATA[<p>photo test</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>photo test</p>
-]]>
-    </summary>
-    
-      <category term="Test" scheme="http://i404.github.io/tags/Test/"/>
-    
-      <category term="Test" scheme="http://i404.github.io/categories/Test/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[mathjaxtest]]></title>
-    <link href="http://i404.github.io/2015/04/23/test/"/>
-    <id>http://i404.github.io/2015/04/23/test/</id>
-    <published>2015-04-23T03:39:28.000Z</published>
-    <updated>2015-04-27T07:49:10.613Z</updated>
-    <content type="html"><![CDATA[<p>$$\int \alpha \sigma \pi \iota \sum $$<br>test</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>$$\int \alpha \sigma \pi \iota \sum $$<br>test</p>
-]]>
-    </summary>
-    
-      <category term="Test" scheme="http://i404.github.io/tags/Test/"/>
-    
-      <category term="Test" scheme="http://i404.github.io/categories/Test/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://i404.github.io/2015/04/20/hello-world/"/>
-    <id>http://i404.github.io/2015/04/20/hello-world/</id>
-    <published>2015-04-20T03:39:28.000Z</published>
-    <updated>2015-04-25T17:45:10.226Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post.<a id="more"></a> Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Welcome to <a href="http://hexo.io/">Hexo</a>! This is your very first post.]]>
-    
-    </summary>
     
   </entry>
   
