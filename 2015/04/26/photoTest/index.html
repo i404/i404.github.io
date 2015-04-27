@@ -14,7 +14,7 @@
     <meta name="description" content="photo test">
 <meta property="og:type" content="article">
 <meta property="og:title" content="photeTest">
-<meta property="og:url" content="http://yoursite.com/2015/04/26/photoTest/index.html">
+<meta property="og:url" content="http://i404.github.io/2015/04/26/photoTest/index.html">
 <meta property="og:site_name" content="i404's Blog">
 <meta property="og:description" content="photo test">
 <meta property="og:image" content="http://7xipqt.com1.z0.glb.clouddn.com/45118886_p7_master1200.jpg">
@@ -61,6 +61,8 @@
 						<li><a href="/archives">归档</a></li>
 					
 						<li><a href="/about">i404</a></li>
+					
+						<li><a href="/atom.xml">RSS</a></li>
 					
 					<li>
  					
@@ -140,7 +142,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2015/04/26/photoTest/" data-title="photeTest | i404&#39;s Blog" data-tsina="2179056287" class="share clearfix">
+	  <div data-url="http://i404.github.io/2015/04/26/photoTest/" data-title="photeTest | i404&#39;s Blog" data-tsina="2179056287" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -174,7 +176,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2015/04/26/photoTest/" data-title="photeTest" data-url="http://yoursite.com/2015/04/26/photoTest/"></div>
+	<div class="ds-thread" data-thread-key="2015/04/26/photoTest/" data-title="photeTest" data-url="http://i404.github.io/2015/04/26/photoTest/"></div>
 </section>
 
 
@@ -198,9 +200,11 @@
 		<ul>
 		
 		  
-			<li><a href="/categories/Test/" title="Test">Test<sup>3</sup></a></li>
+			<li><a href="/categories/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
 		  
 		
+		  
+			<li><a href="/categories/Test/" title="Test">Test<sup>3</sup></a></li>
 		  
 		
 		</ul>
@@ -208,23 +212,13 @@
 
 
   
-<div class="tagslist">
-	<p class="asidetitle">标签</p>
-		<ul class="clearfix">
-		
-			
-				<li><a href="/tags/Test/" title="Test">Test<sup>3</sup></a></li>
-			
-		
-			
-		
-		</ul>
-</div>
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/Test/" style="font-size: 20px;">Test</a><a href="/tags/markdown/" style="font-size: 10px;">markdown</a>
+    </div>
+  </div>
 
-
-  <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
-</div>
 
 </aside>
 </div>
@@ -258,6 +252,8 @@
 		
 		<a href="https://plus.google.com/115884621038170302816?rel=author" target="_blank" class="icon-google_plus" title="Google+"></a>
 		
+		
+		<a href="mailto:linhaoisbr@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
 		
 	</div>
 			
@@ -306,11 +302,6 @@ $(document).ready(function(){
   $(window).scroll(function(){
     o.css("top",Math.max(80,260-$(this).scrollTop()));
   });
-  
-        getSize();
-        if (myWidth >= 1024) {
-          c.click();
-        }
   
   $(window).resize(function(){
     getSize(); 
