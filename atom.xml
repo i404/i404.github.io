@@ -3,9 +3,9 @@
   <title><![CDATA[i404's Blog]]></title>
   
   <link href="/atom.xml" rel="self"/>
-  <link href="http://i404.github.io/"/>
+  <link href="http://i404.gitcafe.io/"/>
   <updated>2015-04-28T03:19:41.735Z</updated>
-  <id>http://i404.github.io/</id>
+  <id>http://i404.gitcafe.io/</id>
   
   <author>
     <name><![CDATA[i404]]></name>
@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[Markdown基础语法]]></title>
-    <link href="http://i404.github.io/2015/04/27/Markdown/"/>
-    <id>http://i404.github.io/2015/04/27/Markdown/</id>
+    <link href="http://i404.gitcafe.io/2015/04/27/Markdown/"/>
+    <id>http://i404.gitcafe.io/2015/04/27/Markdown/</id>
     <published>2015-04-27T02:45:42.000Z</published>
     <updated>2015-04-28T03:19:41.735Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xipqt.com1.z0.glb.clouddn.com/markdown-logo.jpg" class="img-logo"><br>其实第一次让我写Markdown我是拒绝的。因为我觉得你不能叫我写我就写。首先我要试一下。发现果然有点简洁。现在我不仅自己在用，也推荐我的基友用。<a id="more"></a></p>
@@ -93,7 +93,7 @@
 </blockquote>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">还有一种自动式，加尖括号</span><br><span class="line">&lt;<span class="string">http:</span><span class="comment">//google.com&gt;</span></span><br><span class="line">&lt;linhaoisbr<span class="annotation">@gmail</span>.com&gt;</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p><a href="http://google.com" target="_blank" rel="external">http://google.com</a><br><a href="&#109;&#x61;&#105;&#108;&#x74;&#111;&#x3a;&#108;&#x69;&#110;&#104;&#x61;&#x6f;&#105;&#x73;&#x62;&#114;&#x40;&#x67;&#x6d;&#97;&#x69;&#108;&#x2e;&#99;&#111;&#109;">&#108;&#x69;&#110;&#104;&#x61;&#x6f;&#105;&#x73;&#x62;&#114;&#x40;&#x67;&#x6d;&#97;&#x69;&#108;&#x2e;&#99;&#111;&#109;</a></p>
+<p><a href="http://google.com" target="_blank" rel="external">http://google.com</a><br><a href="&#x6d;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#x6c;&#105;&#110;&#x68;&#x61;&#111;&#105;&#115;&#x62;&#x72;&#x40;&#x67;&#109;&#97;&#105;&#x6c;&#46;&#x63;&#111;&#109;">&#x6c;&#105;&#110;&#x68;&#x61;&#111;&#105;&#115;&#x62;&#x72;&#x40;&#x67;&#109;&#97;&#105;&#x6c;&#46;&#x63;&#111;&#109;</a></p>
 </blockquote>
 <h2 id="图片">图片</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">图片和链接十分相似啊，前面加一发!</span><br><span class="line">![<span class="link_label">Logo</span>](<span class="link_url">http://upload.wikimedia.org/wikipedia/commons/b/b2/Blizzard_Entertainment_Logo.svg "暴雪"</span>)</span><br></pre></td></tr></table></figure>
 <p><img src="http://upload.wikimedia.org/wikipedia/commons/b/b2/Blizzard_Entertainment_Logo.svg" alt="Logo" title="暴雪"><br><br><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">引用式</span><br><span class="line">![<span class="link_label">注释注释</span>][<span class="link_reference">2</span>]</span><br><span class="line">[<span class="link_reference">2</span>]:<span class="link_url">http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png "Github"</span></span><br></pre></td></tr></table></figure></p>
@@ -117,9 +117,9 @@
     
     </summary>
     
-      <category term="markdown" scheme="http://i404.github.io/tags/markdown/"/>
+      <category term="markdown" scheme="http://i404.gitcafe.io/tags/markdown/"/>
     
-      <category term="Hexo" scheme="http://i404.github.io/categories/Hexo/"/>
+      <category term="Hexo" scheme="http://i404.gitcafe.io/categories/Hexo/"/>
     
   </entry>
   
