@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://i404.gitcafe.io/"/>
-  <updated>2015-04-28T04:36:27.474Z</updated>
+  <updated>2015-04-30T05:45:46.073Z</updated>
   <id>http://i404.gitcafe.io/</id>
   
   <author>
@@ -15,21 +15,47 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[TP-Link 702N 装 Openwrt]]></title>
+    <link href="http://i404.gitcafe.io/2015/04/30/702N/"/>
+    <id>http://i404.gitcafe.io/2015/04/30/702N/</id>
+    <published>2015-04-30T04:08:39.000Z</published>
+    <updated>2015-04-30T05:45:46.073Z</updated>
+    <content type="html"><![CDATA[<p><img src="http://7xipqt.com1.z0.glb.clouddn.com/openwrt-logo.png" class="img-logo"><br>今天搞了一个TP-Link的702N路由器，又想刷成OpenWRT。我为什么说又，因为已经刷过两个703N了。<a id="more"></a></p>
+<h2 id="什么是OpenWRT">什么是OpenWRT</h2><p>Openwrt是一个适合嵌入式设备的一个Linux的发行版本。</p>
+<p>具体的还是看它的<a href="http://en.wikipedia.org/wiki/OpenWrt" target="_blank" rel="external">维基百科</a>和<a href="https://openwrt.org/" target="_blank" rel="external">官方网站</a>吧。</p>
+<h2 id="为什么要装OpenWRT">为什么要装OpenWRT</h2><p>因为原厂固件是单一静态的固件，限制太多。而OpenWRT可以让我完全掌握硬件，自由地安装软件，编写程序，配置参数。 正如它的logo上写的一样：<strong>Wireless Freedom</strong></p>
+<h2 id="为什么把702N和703N比较">为什么把702N和703N比较</h2><p>看了WR702N和WR703N的拆机图，发现这两个机子硬件几乎一模一样，PCB也一模一样。<br>想看PCB的可以到<a href="http://squonk42.github.io/TL-WR703N/" target="_blank" rel="external">这里</a>看。</p>
+<h2 id="702N和703N有什么区别">702N和703N有什么区别</h2><h3 id="外观_外设">外观 外设</h3><p><img src="http://7xipqt.com1.z0.glb.clouddn.com/702N 703N.JPG" alt="上为702N 下为703N"><br>可以看到两款路由器的仅仅颜色不一样。外设上703N比702N多一个USB接口。</p>
+<h3 id="SoC_闪存_内存">SoC 闪存 内存</h3><p>703N的Soc是AR9331 ，4M的闪存， 32M的内存<br>702N的Soc同为AR9331，2M的闪存， 16M的内存</p>
+<p>可以看到702N其实就是703N的缩水版，所以我们可以把702N刷上703N的固件。但是2M的闪存和16M的内存都太小了，需要更换上更大的才能装OpenWRT。</p>
+<h2 id="硬改_挖个坑">硬改 挖个坑</h2>]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="http://7xipqt.com1.z0.glb.clouddn.com/openwrt-logo.png" class="img-logo" /><br>今天搞了一个TP-Link的702N路由器，又想刷成OpenWRT。我为什么说又，因为已经刷过两个703N了。]]>
+    
+    </summary>
+    
+      <category term="OpenWRT" scheme="http://i404.gitcafe.io/tags/OpenWRT/"/>
+    
+      <category term="路由器" scheme="http://i404.gitcafe.io/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    
+      <category term="硬件" scheme="http://i404.gitcafe.io/categories/%E7%A1%AC%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Markdown基础语法]]></title>
     <link href="http://i404.gitcafe.io/2015/04/27/Markdown/"/>
     <id>http://i404.gitcafe.io/2015/04/27/Markdown/</id>
     <published>2015-04-27T02:45:42.000Z</published>
-    <updated>2015-04-28T04:36:27.474Z</updated>
+    <updated>2015-04-30T05:47:00.207Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xipqt.com1.z0.glb.clouddn.com/markdown-logo.jpg" class="img-logo"><br>其实第一次让我写Markdown我是拒绝的。因为我觉得你不能叫我写我就写。首先我要试一下。发现果然有点简洁。现在我不仅自己在用，也推荐我的基友用。<a id="more"></a></p>
 <hr>
 <h2 id="Atx方式的标题">Atx方式的标题</h2><figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#的个数就代表几级标题</span></span><br><span class="line"><span class="preprocessor">#一级标题</span></span><br><span class="line"><span class="preprocessor">##二级标题</span></span><br><span class="line"><span class="preprocessor">###三级标题</span></span><br><span class="line"><span class="preprocessor">####四级标题</span></span><br><span class="line"><span class="preprocessor">#####五级标题</span></span><br><span class="line"><span class="preprocessor">######六级标题</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <h1 id="一级标题">一级标题</h1><h2 id="二级标题">二级标题</h2><h3 id="三级标题">三级标题</h3><h4 id="四级标题">四级标题</h4><h5 id="五级标题">五级标题</h5><h6 id="六级标题">六级标题</h6></blockquote>
-<h2 id="Settext方式的标题">Settext方式的标题</h2><figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在文字下方加任意数量的=和_，就可以分别让他们变成一级标题和二级标题</span><br><span class="line">大标题</span><br><span class="line">=<span class="ruby">==</span><br><span class="line"></span>小标题</span><br><span class="line">___</span><br></pre></td></tr></table></figure>
+<h2 id="Settext方式的标题">Settext方式的标题</h2><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在文字下方加任意数量的=和-，就可以分别让他们变成一级标题和二级标题</span><br><span class="line"><span class="header">大标题</span><br><span class="line">===</span></span><br><span class="line"><span class="header">小标题</span><br><span class="line">----</span></span><br></pre></td></tr></table></figure>
 <blockquote>
-<h1 id="大标题">大标题</h1><p>小标题</p>
-<hr>
-</blockquote>
+<h1 id="大标题">大标题</h1><h2 id="小标题">小标题</h2></blockquote>
 <h2 id="字体">字体</h2><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">星号与下划线都可以，单是斜体，双是粗体，符号可跨行，符号可加空格</span><br><span class="line"><span class="keyword">*</span><span class="keyword">*</span>Holy shit<span class="keyword">*</span><span class="keyword">*</span></span><br><span class="line"></span><br><span class="line">__there is no doubt that__</span><br><span class="line"><span class="keyword">*</span>老夫的赏金猎人</span><br><span class="line">是全Dota<span class="keyword">*</span></span><br><span class="line">_最猥琐的_</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p><strong>Holy shit</strong></p>
@@ -93,7 +119,7 @@
 </blockquote>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">还有一种自动式，加尖括号</span><br><span class="line">&lt;<span class="string">http:</span><span class="comment">//google.com&gt;</span></span><br><span class="line">&lt;linhaoisbr<span class="annotation">@gmail</span>.com&gt;</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p><a href="http://google.com" target="_blank" rel="external">http://google.com</a><br><a href="&#109;&#x61;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#108;&#105;&#x6e;&#104;&#x61;&#x6f;&#105;&#x73;&#98;&#x72;&#x40;&#x67;&#x6d;&#x61;&#x69;&#108;&#x2e;&#99;&#x6f;&#109;">&#108;&#105;&#x6e;&#104;&#x61;&#x6f;&#105;&#x73;&#98;&#x72;&#x40;&#x67;&#x6d;&#x61;&#x69;&#108;&#x2e;&#99;&#x6f;&#109;</a></p>
+<p><a href="http://google.com" target="_blank" rel="external">http://google.com</a><br><a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#58;&#108;&#x69;&#110;&#x68;&#97;&#111;&#x69;&#115;&#98;&#x72;&#64;&#103;&#x6d;&#97;&#105;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#108;&#x69;&#110;&#x68;&#97;&#111;&#x69;&#115;&#98;&#x72;&#64;&#103;&#x6d;&#97;&#105;&#x6c;&#46;&#x63;&#x6f;&#x6d;</a></p>
 </blockquote>
 <h2 id="图片">图片</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">图片和链接十分相似啊，前面加一发!</span><br><span class="line">![<span class="link_label">Logo</span>](<span class="link_url">http://upload.wikimedia.org/wikipedia/commons/b/b2/Blizzard_Entertainment_Logo.svg "暴雪"</span>)</span><br></pre></td></tr></table></figure>
 <p><img src="http://upload.wikimedia.org/wikipedia/commons/b/b2/Blizzard_Entertainment_Logo.svg" alt="Logo" title="暴雪"><br><br><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">引用式</span><br><span class="line">![<span class="link_label">注释注释</span>][<span class="link_reference">2</span>]</span><br><span class="line">[<span class="link_reference">2</span>]:<span class="link_url">http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png "Github"</span></span><br></pre></td></tr></table></figure></p>
@@ -117,7 +143,7 @@
     
     </summary>
     
-      <category term="markdown" scheme="http://i404.gitcafe.io/tags/markdown/"/>
+      <category term="Markdown" scheme="http://i404.gitcafe.io/tags/Markdown/"/>
     
       <category term="Hexo" scheme="http://i404.gitcafe.io/categories/Hexo/"/>
     
