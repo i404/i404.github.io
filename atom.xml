@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://i404.gitcafe.io/"/>
-  <updated>2015-05-04T12:09:19.289Z</updated>
+  <updated>2015-05-04T16:48:17.169Z</updated>
   <id>http://i404.gitcafe.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://i404.gitcafe.io/2015/05/02/date/"/>
     <id>http://i404.gitcafe.io/2015/05/02/date/</id>
     <published>2015-05-02T12:24:27.000Z</published>
-    <updated>2015-05-04T12:09:19.289Z</updated>
+    <updated>2015-05-04T16:48:17.169Z</updated>
     <content type="html"><![CDATA[<p>家里有台很老爷的手机。老到什么程度呢，设定的时间最多只能是2014年，2015年就溢出了。没错，就是这么老，就是这么酷炫。<a id="more"></a></p>
 <p>如果我想继续使用这个手机，就算年份不对，起码星期要对得上吧。</p>
 <p>可能上面那句话说得不是很清楚，其实就是假设2015年1月1日是星期一，那我要找个1月1日也同为星期一的年份，这样看日期就顺眼多了。</p>
@@ -43,8 +43,9 @@
 <p>要是我没有看过 <strong>蔡勒公式</strong>，我肯定会这样说：妈的这是不可能的，老夫可是是专业解说啊，1月2月卡在前面的位置，不可能形成规律的，不可能能化简的啊。</p>
 <p>现在我会轻轻地说：当然有啦，不过要变通一下，要把1月和2月看成前以前的13月和14月就好了！</p>
 <p>因为按照规律，3 2 3 2 3 五个一循环，12月接下来的月份的剩余天数也要是3啊，一月正好符合这个规律，所以可以名正言顺地当13月啦。至于2月，妈的老子都是最后一个月啦，前面天数加起来再加个 $d$ 就好了，谁特么还管闰不闰月啊！</p>
-<p>所以，这个公式就变成这样了<br>$$D = \lfloor\frac {13(m+1)}{5}\rfloor - 7 + (m-1) \times 28 + d ,3\leqslant m\leqslant14$$</p>
-<h2 id="刚才提到的蔡勒公式是毛啊">刚才提到的蔡勒公式是毛啊</h2><p>挖坑挖坑<br>$$w = \left(y+[\frac {y}{4}] + [\frac {c}{4}] - 2c + [\frac{26(m+1)} {10}] + d -1 \right)$$</p>
+<p>所以，这个公式就变成这样了<br>$$D = \lfloor\frac {13(m+1)}{5}\rfloor - 7 + (m-1) \times 28 + d ,3\leqslant m\leqslant14$$<br>那现在我们把上面化简好的公式代入到原来的星期公式里去试试<br>$$w = \left( (Y-1)\times 365 + \lfloor\frac {Y-1}{4}\rfloor - \lfloor\frac {Y-1}{100}\rfloor +\lfloor\frac {Y-1}{400}\rfloor + \lfloor\frac {13(m+1)}{5}\rfloor - 7 + (m-1) \times 28 + d \right) \mod 7$$<br>由于外面是$\mod 7$，那么可以化简成这样<br>$$w = \left( (Y-1) + \lfloor\frac {Y-1}{4}\rfloor - \lfloor\frac {Y-1}{100}\rfloor +\lfloor\frac {Y-1}{400}\rfloor + \lfloor\frac {13(m+1)}{5}\rfloor+ d \right) \mod 7$$<br>现在看这公式是不是已经很帅了？</p>
+<h2 id="刚才提到的蔡勒公式是毛啊">刚才提到的蔡勒公式是毛啊</h2><p>这个问题有点好，以至于没法马上回答（大雾）。<br>其实把我们上面得到的公式再调整得酷炫一点，就变成蔡勒公式了。</p>
+<p>$$w = \left(y+[\frac {y}{4}] + [\frac {c}{4}] - 2c + [\frac{26(m+1)} {10}] + d -1 \right)$$<br>先贴个蔡勒公式，挖个坑下次再补。</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>家里有台很老爷的手机。老到什么程度呢，设定的时间最多只能是2014年，2015年就溢出了。没错，就是这么老，就是这么酷炫。]]>
@@ -164,7 +165,7 @@
 </blockquote>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">还有一种自动式，加尖括号</span><br><span class="line">&lt;<span class="string">http:</span><span class="comment">//google.com&gt;</span></span><br><span class="line">&lt;linhaoisbr<span class="annotation">@gmail</span>.com&gt;</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p><a href="http://google.com" target="_blank" rel="external">http://google.com</a><br><a href="&#109;&#97;&#105;&#108;&#x74;&#x6f;&#58;&#x6c;&#105;&#x6e;&#104;&#x61;&#x6f;&#x69;&#x73;&#x62;&#114;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#x6c;&#105;&#x6e;&#104;&#x61;&#x6f;&#x69;&#x73;&#x62;&#114;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
+<p><a href="http://google.com" target="_blank" rel="external">http://google.com</a><br><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#108;&#x69;&#110;&#104;&#x61;&#x6f;&#x69;&#115;&#98;&#x72;&#x40;&#x67;&#x6d;&#97;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;">&#108;&#x69;&#110;&#104;&#x61;&#x6f;&#x69;&#115;&#98;&#x72;&#x40;&#x67;&#x6d;&#97;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;</a></p>
 </blockquote>
 <h2 id="图片">图片</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">图片和链接十分相似啊，前面加一发!</span><br><span class="line">![<span class="link_label">Logo</span>](<span class="link_url">http://upload.wikimedia.org/wikipedia/commons/b/b2/Blizzard_Entertainment_Logo.svg "暴雪"</span>)</span><br></pre></td></tr></table></figure>
 <p><img src="http://upload.wikimedia.org/wikipedia/commons/b/b2/Blizzard_Entertainment_Logo.svg" alt="Logo" title="暴雪"><br><br><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">引用式</span><br><span class="line">![<span class="link_label">注释注释</span>][<span class="link_reference">2</span>]</span><br><span class="line">[<span class="link_reference">2</span>]:<span class="link_url">http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png "Github"</span></span><br></pre></td></tr></table></figure></p>
