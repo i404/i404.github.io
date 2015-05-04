@@ -4,24 +4,22 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>TP-Link 702N 装 Openwrt | i404&#39;s Blog</title>
+    <title>星期的计算 | i404&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="i404">
     
 
     
-    <meta name="description" content="今天搞了一个TP-Link的702N路由器，又想刷成OpenWRT。我为什么说又，因为已经刷过两个703N了。">
+    <meta name="description" content="家里有台很老爷的手机。老到什么程度呢，设定的时间最多只能是2014年，2015年就溢出了。没错，就是这么老，就是这么酷炫。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="TP-Link 702N 装 Openwrt">
-<meta property="og:url" content="http://i404.gitcafe.io/2015/04/30/702N/index.html">
+<meta property="og:title" content="星期的计算">
+<meta property="og:url" content="http://i404.gitcafe.io/2015/05/02/date/index.html">
 <meta property="og:site_name" content="i404's Blog">
-<meta property="og:description" content="今天搞了一个TP-Link的702N路由器，又想刷成OpenWRT。我为什么说又，因为已经刷过两个703N了。">
-<meta property="og:image" content="http://7xipqt.com1.z0.glb.clouddn.com/openwrt-logo.png">
-<meta property="og:image" content="http://7xipqt.com1.z0.glb.clouddn.com/702N 703N.JPG">
+<meta property="og:description" content="家里有台很老爷的手机。老到什么程度呢，设定的时间最多只能是2014年，2015年就溢出了。没错，就是这么老，就是这么酷炫。">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="TP-Link 702N 装 Openwrt">
-<meta name="twitter:description" content="今天搞了一个TP-Link的702N路由器，又想刷成OpenWRT。我为什么说又，因为已经刷过两个703N了。">
+<meta name="twitter:title" content="星期的计算">
+<meta name="twitter:description" content="家里有台很老爷的手机。老到什么程度呢，设定的时间最多只能是2014年，2015年就溢出了。没错，就是这么老，就是这么酷炫。">
 
     
     <link rel="alternative" href="/atom.xml" title="i404&#39;s Blog" type="application/atom+xml">
@@ -82,14 +80,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/04/30/702N/" title="TP-Link 702N 装 Openwrt" itemprop="url">TP-Link 702N 装 Openwrt</a>
+      <a href="/2015/05/02/date/" title="星期的计算" itemprop="url">星期的计算</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="i404" target="_blank" itemprop="author">i404</a>
 		
   <p class="article-time">
-    <time datetime="2015-04-30T04:08:39.000Z" itemprop="datePublished"> 发表于 2015-04-30</time>
+    <time datetime="2015-05-02T12:24:27.000Z" itemprop="datePublished"> 发表于 2015-05-02</time>
     
   </p>
 </header>
@@ -98,32 +96,49 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是OpenWRT"><span class="toc-number">1.</span> <span class="toc-text">什么是OpenWRT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么要装OpenWRT"><span class="toc-number">2.</span> <span class="toc-text">为什么要装OpenWRT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么把702N和703N比较"><span class="toc-number">3.</span> <span class="toc-text">为什么把702N和703N比较</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#702N和703N有什么区别"><span class="toc-number">4.</span> <span class="toc-text">702N和703N有什么区别</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#外观_外设"><span class="toc-number">4.1.</span> <span class="toc-text">外观 外设</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SoC_闪存_内存"><span class="toc-number">4.2.</span> <span class="toc-text">SoC 闪存 内存</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#硬改_挖个坑"><span class="toc-number">5.</span> <span class="toc-text">硬改 挖个坑</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#怎么算呢"><span class="toc-number">1.</span> <span class="toc-text">怎么算呢</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#能不能仅仅通过日期计算星期啊"><span class="toc-number">2.</span> <span class="toc-text">能不能仅仅通过日期计算星期啊</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#能不能更简单一点啊"><span class="toc-number">3.</span> <span class="toc-text">能不能更简单一点啊</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#能不能再给力一点啊"><span class="toc-number">4.</span> <span class="toc-text">能不能再给力一点啊</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#刚才提到的蔡勒公式是毛啊"><span class="toc-number">5.</span> <span class="toc-text">刚才提到的蔡勒公式是毛啊</span></a></li></ol>
 		
 		</div>
 		
-		<p><img src="http://7xipqt.com1.z0.glb.clouddn.com/openwrt-logo.png" class="img-logo"><br>今天搞了一个TP-Link的702N路由器，又想刷成OpenWRT。我为什么说又，因为已经刷过两个703N了。<a id="more"></a></p>
-<h2 id="什么是OpenWRT">什么是OpenWRT</h2><p>Openwrt是一个适合嵌入式设备的一个Linux的发行版本。</p>
-<p>具体的还是看它的<a href="http://en.wikipedia.org/wiki/OpenWrt" target="_blank" rel="external">维基百科</a>和<a href="https://openwrt.org/" target="_blank" rel="external">官方网站</a>吧。</p>
-<h2 id="为什么要装OpenWRT">为什么要装OpenWRT</h2><p>因为原厂固件是单一静态的固件，限制太多。而OpenWRT可以让我完全掌握硬件，自由地安装软件，编写程序，配置参数。 正如它的logo上写的一样：<strong>Wireless Freedom</strong></p>
-<h2 id="为什么把702N和703N比较">为什么把702N和703N比较</h2><p>看了WR702N和WR703N的拆机图，发现这两个机子硬件几乎一模一样，PCB也一模一样。<br>想看PCB的可以到<a href="http://squonk42.github.io/TL-WR703N/" target="_blank" rel="external">这里</a>看。</p>
-<h2 id="702N和703N有什么区别">702N和703N有什么区别</h2><h3 id="外观_外设">外观 外设</h3><p><img src="http://7xipqt.com1.z0.glb.clouddn.com/702N 703N.JPG" alt="上为702N 下为703N"><br>可以看到两款路由器的仅仅颜色不一样。外设上703N比702N多一个USB接口。</p>
-<h3 id="SoC_闪存_内存">SoC 闪存 内存</h3><p>703N的Soc是AR9331 ，4M的闪存， 32M的内存<br>702N的Soc同为AR9331，2M的闪存， 16M的内存</p>
-<p>可以看到702N其实就是703N的缩水版，所以我们可以把702N刷上703N的固件。但是2M的闪存和16M的内存都太小了，需要更换上更大的才能装OpenWRT。</p>
-<h2 id="硬改_挖个坑">硬改 挖个坑</h2>  
+		<p>家里有台很老爷的手机。老到什么程度呢，设定的时间最多只能是2014年，2015年就溢出了。没错，就是这么老，就是这么酷炫。<a id="more"></a></p>
+<p>如果我想继续使用这个手机，就算年份不对，起码星期要对得上吧。</p>
+<p>可能上面那句话说得不是很清楚，其实就是假设2015年1月1日是星期一，那我要找个1月1日也同为星期一的年份，这样看日期就顺眼多了。</p>
+<h2 id="怎么算呢">怎么算呢</h2><p>有同学就应该会这样说，365 mod 7 = 1，就是说每过一年同日期的星期就要相差一天，再考虑到2月的特殊性，过了闰年则要再多算一天，2015年附近又特么没有特别的年份，所以最近的年份就是2015 - 6 = 2009年了。</p>
+<h2 id="能不能仅仅通过日期计算星期啊">能不能仅仅通过日期计算星期啊</h2><p>“那我能不能通过日期计算星期呢？”，我当时就这么想的。那么到底能不能呢，然后我觉得应该是有可能的，因为假如我知道今天1992年4月14号是星期三，现在我想知道今天2015年5月1日是星期几，通过上面的思路，只要算出两个日期之间相差的天数，就可以知道那一天的星期数了。</p>
+<p>但是，这个天数好像算起来也有点麻烦啊，要分三段来算:</p>
+<blockquote>
+<ul>
+<li>1992 4 14 ~ 1992 12 31</li>
+<li>1993 1 1 ~ 2014 12 31</li>
+<li>2015 1 1 ~ 2015 5 1</li>
+</ul>
+</blockquote>
+<p>我靠，那我要是知道1992年12月31日是星期几不就可以不用算第一段了？等等，用公元年12月31日好像很棒啊，第二段的都可以简单一点，简直完美啊。<br>按公历的定义，0年12月31日应该是星期天，设$Y$是年份，$D$为第三段的天数，$w$为星期数，那么就可以这样写<br>$$w = \left( (Y-1)\times 365 + \lfloor\frac {Y-1}{4}\rfloor - \lfloor\frac {Y-1}{100}\rfloor +\lfloor\frac {Y-1}{400}\rfloor + D\right) \mod 7$$</p>
+<h2 id="能不能更简单一点啊">能不能更简单一点啊</h2><p>这时候就应该有同学喷我，根本没有简单的公式，上面那个 $D$ 还是要算的，真是太麻烦了。<br>那就给 $D$ 也搞个公式好了。</p>
+<p>首先列一张正常的月份天数的表格</p>
+<p><table><tr><td bgcolor="#66ccff"><font color="#FFFFFF">月份</font></td><td>1月</td><td>2月</td><td>3月</td><td>4月</td><td>5月</td><td>6月</td><td>7月</td><td>8月</td><td>9月</td><td>10月</td><td>11月</td><td>12月</td></tr><tr><td bgcolor="#66ccff"><font color="#FFFFFF">天数</font></td><td>31</td><td>28/29</td><td>31</td><td>30</td><td>31</td><td>30</td><td>31</td><td>31</td><td>30</td><td>31</td><td>30</td><td>31</td></tr></table><br>反正不影响星期数，我们把天数都减28，相当于$\mod 7$，我们可以得到这样的一张表</p>
+<p><table><tr><td bgcolor="#66ccff"><font color="#FFFFFF">月份</font></td><td>1月</td><td>2月</td><td>3月</td><td>4月</td><td>5月</td><td>6月</td><td>7月</td><td>8月</td><td>9月</td><td>10月</td><td>11月</td><td>12月</td></tr><tr><td bgcolor="#66ccff"><font color="#FFFFFF">剩余天数</font></td><td>3</td><td>0/1</td><td>3</td><td>2</td><td>3</td><td>2</td><td>3</td><td>3</td><td>2</td><td>3</td><td>2</td><td>3</td></tr><tr><td bgcolor="#66ccff"><font color="#FFFFFF">平年累计</font></td><td>3</td><td>3</td><td>7</td><td>9</td><td>11</td><td>13</td><td>16</td><td>19</td><td>21</td><td>24</td><td>26</td><td>29</td></tr></table><br>然后就可以看到除了一月和二月比较特别以外，3到7月和8到12月都是3 2 3 2 3，五个一循环，那就可以尝试使用取整符号构造一下函数好了<br>$$<br>\begin{equation}<br>D =<br>\left\{<br>\begin{array}{c}<br>d,m=1  \\<br>d+31,m=2  \\<br>\lfloor\frac {13(m+1)}{5}\rfloor - 7 + (m-1) \times 28 + d + i,m\geqslant 3<br>\end{array}<br>\right.<br>\end{equation}<br>$$</p>
+<p>这里解释一下 $\lfloor\frac {13(m+1)}{5}\rfloor - 7 $ 这个项，这个就是根据上面表格中的平年累计天数的数据构造（蒙）出来的的项，然后加上后面的$(m-1) \times 28$，那么结果就是在这个日期之前的所有月份的总天数，这个 $i$ 则用来表示是不是闰年。<br>这时候把这个公式代回到上面年份的公式上去，就爽多了。</p>
+<h2 id="能不能再给力一点啊">能不能再给力一点啊</h2><p>有同学看到这里会这样说，妈的你这公式又分情况又有个 $i$，能不能都不要啊，再简洁一点啊！！</p>
+<p>要是我没有看过 <strong>蔡勒公式</strong>，我肯定会这样说：妈的这是不可能的，老夫可是是专业解说啊，1月2月卡在前面的位置，不可能形成规律的，不可能能化简的啊。</p>
+<p>现在我会轻轻地说：当然有啦，不过要变通一下，要把1月和2月看成前以前的13月和14月就好了！</p>
+<p>因为按照规律，3 2 3 2 3 五个一循环，12月接下来的月份的剩余天数也要是3啊，一月正好符合这个规律，所以可以名正言顺地当13月啦。至于2月，妈的老子都是最后一个月啦，前面天数加起来再加个 $d$ 就好了，谁特么还管闰不闰月啊！</p>
+<p>所以，这个公式就变成这样了<br>$$D = \lfloor\frac {13(m+1)}{5}\rfloor - 7 + (m-1) \times 28 + d ,3\leqslant m\leqslant14$$</p>
+<h2 id="刚才提到的蔡勒公式是毛啊">刚才提到的蔡勒公式是毛啊</h2><p>挖坑挖坑<br>$$w = \left(y+[\frac {y}{4}] + [\frac {c}{4}] - 2c + [\frac{26(m+1)} {10}] + d -1 \right)$$</p>
+  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/硬件/">硬件</a>
+  <a class="article-category-link" href="/categories/数学/">数学</a>
 </div>
 
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/OpenWRT/">OpenWRT</a><a href="/tags/路由器/">路由器</a>
+  <span></span> <a href="/tags/数学/">数学</a><a href="/tags/蔡勒公式/">蔡勒公式</a>
   </div>
 
 </div>
@@ -132,7 +147,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://i404.gitcafe.io/2015/04/30/702N/" data-title="TP-Link 702N 装 Openwrt | i404&#39;s Blog" data-tsina="2179056287" class="share clearfix">
+	  <div data-url="http://i404.gitcafe.io/2015/05/02/date/" data-title="星期的计算 | i404&#39;s Blog" data-tsina="2179056287" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -145,19 +160,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/05/02/date/" title="星期的计算">
-  <strong>上一篇：</strong><br/>
-  <span>
-  星期的计算</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015/04/27/Markdown/"  title="Markdown基础语法">
+<a href="/2015/04/30/702N/"  title="TP-Link 702N 装 Openwrt">
  <strong>下一篇：</strong><br/> 
- <span>Markdown基础语法
+ <span>TP-Link 702N 装 Openwrt
 </span>
 </a>
 </div>
@@ -166,7 +173,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2015/04/30/702N/" data-title="TP-Link 702N 装 Openwrt" data-url="http://i404.gitcafe.io/2015/04/30/702N/"></div>
+	<div class="ds-thread" data-thread-key="2015/05/02/date/" data-title="星期的计算" data-url="http://i404.gitcafe.io/2015/05/02/date/"></div>
 </section>
 
 
@@ -176,7 +183,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是OpenWRT"><span class="toc-number">1.</span> <span class="toc-text">什么是OpenWRT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么要装OpenWRT"><span class="toc-number">2.</span> <span class="toc-text">为什么要装OpenWRT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么把702N和703N比较"><span class="toc-number">3.</span> <span class="toc-text">为什么把702N和703N比较</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#702N和703N有什么区别"><span class="toc-number">4.</span> <span class="toc-text">702N和703N有什么区别</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#外观_外设"><span class="toc-number">4.1.</span> <span class="toc-text">外观 外设</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SoC_闪存_内存"><span class="toc-number">4.2.</span> <span class="toc-text">SoC 闪存 内存</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#硬改_挖个坑"><span class="toc-number">5.</span> <span class="toc-text">硬改 挖个坑</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#怎么算呢"><span class="toc-number">1.</span> <span class="toc-text">怎么算呢</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#能不能仅仅通过日期计算星期啊"><span class="toc-number">2.</span> <span class="toc-text">能不能仅仅通过日期计算星期啊</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#能不能更简单一点啊"><span class="toc-number">3.</span> <span class="toc-text">能不能更简单一点啊</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#能不能再给力一点啊"><span class="toc-number">4.</span> <span class="toc-text">能不能再给力一点啊</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#刚才提到的蔡勒公式是毛啊"><span class="toc-number">5.</span> <span class="toc-text">刚才提到的蔡勒公式是毛啊</span></a></li></ol>
  
   </div>
 
