@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://i404.gitcafe.io/"/>
-  <updated>2015-05-04T16:55:52.056Z</updated>
+  <updated>2015-05-04T17:37:26.605Z</updated>
   <id>http://i404.gitcafe.io/</id>
   
   <author>
@@ -13,6 +13,41 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[一次被微信坑的经历]]></title>
+    <link href="http://i404.gitcafe.io/2015/05/05/wechat/"/>
+    <id>http://i404.gitcafe.io/2015/05/05/wechat/</id>
+    <published>2015-05-04T16:59:48.000Z</published>
+    <updated>2015-05-04T17:37:26.605Z</updated>
+    <content type="html"><![CDATA[<p>今天突然发现自己的微信公众平台突然挂了，明明什么都没动，竟然就不能用了，甚是郁闷。于是慌忙登录SAE，准备一探究竟。</p>
+<p>我的平台是用 Python 的 <a href="http://werobot.readthedocs.org/en/latest/" target="_blank" rel="external">WeRoBot</a> 框架做的，看错误代码大概的意思是数据格式不符合规范，我猜是微信公众平台的某些API更新了，所以可能有点不兼容了。还好那部分是实现自定义菜单的，本来就没什么用，注释掉以后发现又可以用了。那就等作者更新或者有兴趣了以后自己改一改吧。<a id="more"></a></p>
+<p>后来发现抠门的腾讯竟然免费提供了语言识别的功能，心想反正老夫以前在测试平台上能用，那现在稍微改改就可以了。</p>
+<p>后来发现根本不是想象中的那样啊！一直都输出None啊，妈的这并不科学啊。会不会是API更新了呢，和以前不一样了呢？ 于是我就去看文档啊，发现这个接口还是一毛一样啊，丝毫没变啊，妈的那为什么会不行呢？</p>
+<p>于是我不能忍啊，不能忍～<br>想看看输出的信息啊。鱿鱼搭在SAE上的后端程序看输出好像有点难度啊，我就在本地写了个简单的socket的服务端，后端程序做客户端发消息过来。</p>
+<p>事实证明，发过来的XML是好的，并不是坏的，也没有加特效。那为什么不行呢呢呢呢？？</p>
+<p>接下来就撤下了socket，发现还是不能用啊，那再看看代码有什么问题吧。 </p>
+<p>啊，找不粗来啊，为什么不行啊，这是为什么啊？。。算了，下次再改吧。</p>
+<p>嗯，正当我要放弃时，我特么发现语音识别功能已经可以用了！！ 你特么是不是在逗我啊？ 妈的等于说是你服务器不稳定？？妈的被坑惨了。</p>
+<p>看来我还是太年轻了。。。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>今天突然发现自己的微信公众平台突然挂了，明明什么都没动，竟然就不能用了，甚是郁闷。于是慌忙登录SAE，准备一探究竟。</p>
+<p>我的平台是用 Python 的 <a href="http://werobot.readthedocs.org/en/latest/">WeRoBot</a> 框架做的，看错误代码大概的意思是数据格式不符合规范，我猜是微信公众平台的某些API更新了，所以可能有点不兼容了。还好那部分是实现自定义菜单的，本来就没什么用，注释掉以后发现又可以用了。那就等作者更新或者有兴趣了以后自己改一改吧。]]>
+    
+    </summary>
+    
+      <category term="SAE" scheme="http://i404.gitcafe.io/tags/SAE/"/>
+    
+      <category term="微信" scheme="http://i404.gitcafe.io/tags/%E5%BE%AE%E4%BF%A1/"/>
+    
+      <category term="微信公众平台" scheme="http://i404.gitcafe.io/tags/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%B9%B3%E5%8F%B0/"/>
+    
+      <category term="随笔" scheme="http://i404.gitcafe.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="随笔" scheme="http://i404.gitcafe.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[星期的计算]]></title>
@@ -165,7 +200,7 @@
 </blockquote>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">还有一种自动式，加尖括号</span><br><span class="line">&lt;<span class="string">http:</span><span class="comment">//google.com&gt;</span></span><br><span class="line">&lt;linhaoisbr<span class="annotation">@gmail</span>.com&gt;</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p><a href="http://google.com" target="_blank" rel="external">http://google.com</a><br><a href="&#x6d;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#x6c;&#105;&#x6e;&#104;&#x61;&#111;&#x69;&#x73;&#x62;&#114;&#x40;&#103;&#x6d;&#x61;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#x6c;&#105;&#x6e;&#104;&#x61;&#111;&#x69;&#x73;&#x62;&#114;&#x40;&#103;&#x6d;&#x61;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;</a></p>
+<p><a href="http://google.com" target="_blank" rel="external">http://google.com</a><br><a href="&#109;&#97;&#105;&#x6c;&#116;&#x6f;&#x3a;&#x6c;&#105;&#110;&#x68;&#x61;&#x6f;&#x69;&#x73;&#98;&#x72;&#x40;&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#109;">&#x6c;&#105;&#110;&#x68;&#x61;&#x6f;&#x69;&#x73;&#98;&#x72;&#x40;&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#109;</a></p>
 </blockquote>
 <h2 id="图片">图片</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">图片和链接十分相似啊，前面加一发!</span><br><span class="line">![<span class="link_label">Logo</span>](<span class="link_url">http://upload.wikimedia.org/wikipedia/commons/b/b2/Blizzard_Entertainment_Logo.svg "暴雪"</span>)</span><br></pre></td></tr></table></figure>
 <p><img src="http://upload.wikimedia.org/wikipedia/commons/b/b2/Blizzard_Entertainment_Logo.svg" alt="Logo" title="暴雪"><br><br><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">引用式</span><br><span class="line">![<span class="link_label">注释注释</span>][<span class="link_reference">2</span>]</span><br><span class="line">[<span class="link_reference">2</span>]:<span class="link_url">http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png "Github"</span></span><br></pre></td></tr></table></figure></p>

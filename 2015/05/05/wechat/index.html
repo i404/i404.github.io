@@ -4,22 +4,25 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>i404&#39;s Blog</title>
+    <title>一次被微信坑的经历 | i404&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="i404">
     
 
     
-    <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="i404's Blog">
-<meta property="og:url" content="http://i404.gitcafe.io/index.html">
+    <meta name="description" content="今天突然发现自己的微信公众平台突然挂了，明明什么都没动，竟然就不能用了，甚是郁闷。于是慌忙登录SAE，准备一探究竟。
+我的平台是用 Python 的 WeRoBot 框架做的，看错误代码大概的意思是数据格式不符合规范，我猜是微信公众平台的某些API更新了，所以可能有点不兼容了。还好那部分是实现自定义菜单的，本来就没什么用，注释掉以后发现又可以用了。那就等作者更新或者有兴趣了以后自己改一改吧。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一次被微信坑的经历">
+<meta property="og:url" content="http://i404.gitcafe.io/2015/05/05/wechat/index.html">
 <meta property="og:site_name" content="i404's Blog">
-<meta property="og:description">
+<meta property="og:description" content="今天突然发现自己的微信公众平台突然挂了，明明什么都没动，竟然就不能用了，甚是郁闷。于是慌忙登录SAE，准备一探究竟。
+我的平台是用 Python 的 WeRoBot 框架做的，看错误代码大概的意思是数据格式不符合规范，我猜是微信公众平台的某些API更新了，所以可能有点不兼容了。还好那部分是实现自定义菜单的，本来就没什么用，注释掉以后发现又可以用了。那就等作者更新或者有兴趣了以后自己改一改吧。">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="i404's Blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="一次被微信坑的经历">
+<meta name="twitter:description" content="今天突然发现自己的微信公众平台突然挂了，明明什么都没动，竟然就不能用了，甚是郁闷。于是慌忙登录SAE，准备一探究竟。
+我的平台是用 Python 的 WeRoBot 框架做的，看错误代码大概的意思是数据格式不符合规范，我猜是微信公众平台的某些API更新了，所以可能有点不兼容了。还好那部分是实现自定义菜单的，本来就没什么用，注释掉以后发现又可以用了。那就等作者更新或者有兴趣了以后自己改一改吧。">
 
     
     <link rel="alternative" href="/atom.xml" title="i404&#39;s Blog" type="application/atom+xml">
@@ -74,12 +77,10 @@
 </div>
     </header>
     <div id="container">
-      <div id="main">
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
   <h1 itemprop="name">
     
       <a href="/2015/05/05/wechat/" title="一次被微信坑的经历" itemprop="url">一次被微信坑的经历</a>
@@ -93,19 +94,21 @@
     
   </p>
 </header>
-    <div class="article-content">
-        
-        <p>今天突然发现自己的微信公众平台突然挂了，明明什么都没动，竟然就不能用了，甚是郁闷。于是慌忙登录SAE，准备一探究竟。</p>
-<p>我的平台是用 Python 的 <a href="http://werobot.readthedocs.org/en/latest/">WeRoBot</a> 框架做的，看错误代码大概的意思是数据格式不符合规范，我猜是微信公众平台的某些API更新了，所以可能有点不兼容了。还好那部分是实现自定义菜单的，本来就没什么用，注释掉以后发现又可以用了。那就等作者更新或者有兴趣了以后自己改一改吧。
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2015/05/05/wechat/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
+	<div class="article-content">
+		
+		<p>今天突然发现自己的微信公众平台突然挂了，明明什么都没动，竟然就不能用了，甚是郁闷。于是慌忙登录SAE，准备一探究竟。</p>
+<p>我的平台是用 Python 的 <a href="http://werobot.readthedocs.org/en/latest/" target="_blank" rel="external">WeRoBot</a> 框架做的，看错误代码大概的意思是数据格式不符合规范，我猜是微信公众平台的某些API更新了，所以可能有点不兼容了。还好那部分是实现自定义菜单的，本来就没什么用，注释掉以后发现又可以用了。那就等作者更新或者有兴趣了以后自己改一改吧。<a id="more"></a></p>
+<p>后来发现抠门的腾讯竟然免费提供了语言识别的功能，心想反正老夫以前在测试平台上能用，那现在稍微改改就可以了。</p>
+<p>后来发现根本不是想象中的那样啊！一直都输出None啊，妈的这并不科学啊。会不会是API更新了呢，和以前不一样了呢？ 于是我就去看文档啊，发现这个接口还是一毛一样啊，丝毫没变啊，妈的那为什么会不行呢？</p>
+<p>于是我不能忍啊，不能忍～<br>想看看输出的信息啊。鱿鱼搭在SAE上的后端程序看输出好像有点难度啊，我就在本地写了个简单的socket的服务端，后端程序做客户端发消息过来。</p>
+<p>事实证明，发过来的XML是好的，并不是坏的，也没有加特效。那为什么不行呢呢呢呢？？</p>
+<p>接下来就撤下了socket，发现还是不能用啊，那再看看代码有什么问题吧。 </p>
+<p>啊，找不粗来啊，为什么不行啊，这是为什么啊？。。算了，下次再改吧。</p>
+<p>嗯，正当我要放弃时，我特么发现语音识别功能已经可以用了！！ 你特么是不是在逗我啊？ 妈的等于说是你服务器不稳定？？妈的被坑惨了。</p>
+<p>看来我还是太年轻了。。。</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
 <div class="article-categories">
@@ -123,218 +126,39 @@
 
 
 
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://i404.gitcafe.io/2015/05/05/wechat/" data-title="一次被微信坑的经历 | i404&#39;s Blog" data-tsina="2179056287" class="share clearfix">
+	  </div>
+	
+	</div>
 
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/05/05/wechat/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/05/05/wechat/" data-count-type="comments">&nbsp;</a>
-	
-</div>
 
 </footer>
 
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/05/02/date/" title="星期的计算" itemprop="url">星期的计算</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="i404" target="_blank" itemprop="author">i404</a>
-		
-  <p class="article-time">
-    <time datetime="2015-05-02T12:24:27.000Z" itemprop="datePublished"> 发表于 2015-05-02</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p><img src="http://7xipqt.com1.z0.glb.clouddn.com/think.jpg" class="img-logo" /><br>家里有台很老爷的手机。老到什么程度呢，设定的时间最多只能是2014年，2015年就溢出了。没错，就是这么老，就是这么酷炫。
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2015/05/02/date/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/数学/">数学</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/数学/">数学</a><a href="/tags/蔡勒公式/">蔡勒公式</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
+   	       
+	</article>
 	
-	  	<span></span>
-		<a href="/2015/05/02/date/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/05/02/date/" data-count-type="comments">&nbsp;</a>
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2015/05/02/date/"  title="星期的计算">
+ <strong>下一篇：</strong><br/> 
+ <span>星期的计算
+</span>
+</a>
+</div>
+
+</nav>
+
 	
-</div>
-
-</footer>
-
-
-    </article>
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/05/05/wechat/" data-title="一次被微信坑的经历" data-url="http://i404.gitcafe.io/2015/05/05/wechat/"></div>
+</section>
 
 
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/04/30/702N/" title="TP-Link 702N 装 Openwrt" itemprop="url">TP-Link 702N 装 Openwrt</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="i404" target="_blank" itemprop="author">i404</a>
-		
-  <p class="article-time">
-    <time datetime="2015-04-30T04:08:39.000Z" itemprop="datePublished"> 发表于 2015-04-30</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p><img src="http://7xipqt.com1.z0.glb.clouddn.com/openwrt-logo.png" class="img-logo" /><br>今天搞了一个TP-Link的702N路由器，又想刷成OpenWRT。我为什么说又，因为已经刷过两个703N了。
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2015/04/30/702N/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/硬件/">硬件</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/OpenWRT/">OpenWRT</a><a href="/tags/路由器/">路由器</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/04/30/702N/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/04/30/702N/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/04/27/Markdown/" title="Markdown基础语法" itemprop="url">Markdown基础语法</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="i404" target="_blank" itemprop="author">i404</a>
-		
-  <p class="article-time">
-    <time datetime="2015-04-27T02:45:42.000Z" itemprop="datePublished"> 发表于 2015-04-27</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p><img src="http://7xipqt.com1.z0.glb.clouddn.com/markdown-logo.jpg" class="img-logo" /><br>其实第一次让我写Markdown我是拒绝的。因为我觉得你不能叫我写我就写。首先我要试一下。发现果然有点简洁。现在我不仅自己在用，也推荐我的基友用。
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2015/04/27/Markdown/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/Markdown/">Markdown</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/04/27/Markdown/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/04/27/Markdown/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-
-</div>
+</div>  
       <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
 <div id="asidepart">
@@ -472,6 +296,61 @@ $(document).ready(function(){
 });
 </script>
 
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#nothing"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
 
 
 
@@ -590,4 +469,4 @@ _ts(option);
 <!-- Tiny_search End -->
 
   </body>
- </html>
+</html>
