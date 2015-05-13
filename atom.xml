@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://i404.gitcafe.io/"/>
-  <updated>2015-05-04T17:37:26.605Z</updated>
+  <updated>2015-05-04T17:37:28.000Z</updated>
   <id>http://i404.gitcafe.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://i404.gitcafe.io/2015/05/05/wechat/"/>
     <id>http://i404.gitcafe.io/2015/05/05/wechat/</id>
     <published>2015-05-04T16:59:48.000Z</published>
-    <updated>2015-05-04T17:37:26.605Z</updated>
+    <updated>2015-05-04T17:37:28.000Z</updated>
     <content type="html"><![CDATA[<p>今天突然发现自己的微信公众平台突然挂了，明明什么都没动，竟然就不能用了，甚是郁闷。于是慌忙登录SAE，准备一探究竟。</p>
 <p>我的平台是用 Python 的 <a href="http://werobot.readthedocs.org/en/latest/" target="_blank" rel="external">WeRoBot</a> 框架做的，看错误代码大概的意思是数据格式不符合规范，我猜是微信公众平台的某些API更新了，所以可能有点不兼容了。还好那部分是实现自定义菜单的，本来就没什么用，注释掉以后发现又可以用了。那就等作者更新或者有兴趣了以后自己改一改吧。<a id="more"></a></p>
 <p>后来发现抠门的腾讯竟然免费提供了语言识别的功能，心想反正老夫以前在测试平台上能用，那现在稍微改改就可以了。</p>
@@ -54,7 +54,7 @@
     <link href="http://i404.gitcafe.io/2015/05/02/date/"/>
     <id>http://i404.gitcafe.io/2015/05/02/date/</id>
     <published>2015-05-02T12:24:27.000Z</published>
-    <updated>2015-05-04T16:55:52.056Z</updated>
+    <updated>2015-05-04T16:55:54.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xipqt.com1.z0.glb.clouddn.com/think.jpg" class="img-logo"><br>家里有台很老爷的手机。老到什么程度呢，设定的时间最多只能是2014年，2015年就溢出了。没错，就是这么老，就是这么酷炫。<a id="more"></a></p>
 <p>如果我想继续使用这个手机，就算年份不对，起码星期要对得上吧。</p>
 <p>可能上面那句话说得不是很清楚，其实就是假设2015年1月1日是星期一，那我要找个1月1日也同为星期一的年份，这样看日期就顺眼多了。</p>
@@ -100,7 +100,7 @@
     <link href="http://i404.gitcafe.io/2015/04/30/702N/"/>
     <id>http://i404.gitcafe.io/2015/04/30/702N/</id>
     <published>2015-04-30T04:08:39.000Z</published>
-    <updated>2015-04-30T05:45:46.073Z</updated>
+    <updated>2015-04-30T05:45:48.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xipqt.com1.z0.glb.clouddn.com/openwrt-logo.png" class="img-logo"><br>今天搞了一个TP-Link的702N路由器，又想刷成OpenWRT。我为什么说又，因为已经刷过两个703N了。<a id="more"></a></p>
 <h2 id="什么是OpenWRT">什么是OpenWRT</h2><p>Openwrt是一个适合嵌入式设备的一个Linux的发行版本。</p>
 <p>具体的还是看它的<a href="http://en.wikipedia.org/wiki/OpenWrt" target="_blank" rel="external">维基百科</a>和<a href="https://openwrt.org/" target="_blank" rel="external">官方网站</a>吧。</p>
@@ -128,7 +128,7 @@
     <link href="http://i404.gitcafe.io/2015/04/27/Markdown/"/>
     <id>http://i404.gitcafe.io/2015/04/27/Markdown/</id>
     <published>2015-04-27T02:45:42.000Z</published>
-    <updated>2015-04-30T05:47:00.207Z</updated>
+    <updated>2015-04-30T05:47:02.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xipqt.com1.z0.glb.clouddn.com/markdown-logo.jpg" class="img-logo"><br>其实第一次让我写Markdown我是拒绝的。因为我觉得你不能叫我写我就写。首先我要试一下。发现果然有点简洁。现在我不仅自己在用，也推荐我的基友用。<a id="more"></a></p>
 <hr>
 <h2 id="Atx方式的标题">Atx方式的标题</h2><figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#的个数就代表几级标题</span></span><br><span class="line"><span class="preprocessor">#一级标题</span></span><br><span class="line"><span class="preprocessor">##二级标题</span></span><br><span class="line"><span class="preprocessor">###三级标题</span></span><br><span class="line"><span class="preprocessor">####四级标题</span></span><br><span class="line"><span class="preprocessor">#####五级标题</span></span><br><span class="line"><span class="preprocessor">######六级标题</span></span><br></pre></td></tr></table></figure>
@@ -200,7 +200,7 @@
 </blockquote>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">还有一种自动式，加尖括号</span><br><span class="line">&lt;<span class="string">http:</span><span class="comment">//google.com&gt;</span></span><br><span class="line">&lt;linhaoisbr<span class="annotation">@gmail</span>.com&gt;</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p><a href="http://google.com" target="_blank" rel="external">http://google.com</a><br><a href="&#109;&#97;&#105;&#x6c;&#116;&#x6f;&#x3a;&#x6c;&#105;&#110;&#x68;&#x61;&#x6f;&#x69;&#x73;&#98;&#x72;&#x40;&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#109;">&#x6c;&#105;&#110;&#x68;&#x61;&#x6f;&#x69;&#x73;&#98;&#x72;&#x40;&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#109;</a></p>
+<p><a href="http://google.com" target="_blank" rel="external">http://google.com</a><br><a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#x6f;&#58;&#108;&#x69;&#x6e;&#104;&#x61;&#111;&#105;&#x73;&#98;&#x72;&#64;&#x67;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#111;&#x6d;">&#108;&#x69;&#x6e;&#104;&#x61;&#111;&#105;&#x73;&#98;&#x72;&#64;&#x67;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#111;&#x6d;</a></p>
 </blockquote>
 <h2 id="图片">图片</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">图片和链接十分相似啊，前面加一发!</span><br><span class="line">![<span class="link_label">Logo</span>](<span class="link_url">http://upload.wikimedia.org/wikipedia/commons/b/b2/Blizzard_Entertainment_Logo.svg "暴雪"</span>)</span><br></pre></td></tr></table></figure>
 <p><img src="http://upload.wikimedia.org/wikipedia/commons/b/b2/Blizzard_Entertainment_Logo.svg" alt="Logo" title="暴雪"><br><br><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">引用式</span><br><span class="line">![<span class="link_label">注释注释</span>][<span class="link_reference">2</span>]</span><br><span class="line">[<span class="link_reference">2</span>]:<span class="link_url">http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png "Github"</span></span><br></pre></td></tr></table></figure></p>
