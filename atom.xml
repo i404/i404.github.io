@@ -3,9 +3,9 @@
   <title><![CDATA[i404's Blog]]></title>
   
   <link href="/atom.xml" rel="self"/>
-  <link href="http://i404.gitcafe.io/"/>
+  <link href="http://i404.github.io/"/>
   <updated>2015-05-04T17:37:28.000Z</updated>
-  <id>http://i404.gitcafe.io/</id>
+  <id>http://i404.github.io/</id>
   
   <author>
     <name><![CDATA[i404]]></name>
@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[一次被微信坑的经历]]></title>
-    <link href="http://i404.gitcafe.io/2015/05/05/wechat/"/>
-    <id>http://i404.gitcafe.io/2015/05/05/wechat/</id>
+    <link href="http://i404.github.io/2015/05/05/wechat/"/>
+    <id>http://i404.github.io/2015/05/05/wechat/</id>
     <published>2015-05-04T16:59:48.000Z</published>
     <updated>2015-05-04T17:37:28.000Z</updated>
     <content type="html"><![CDATA[<p>今天突然发现自己的微信公众平台突然挂了，明明什么都没动，竟然就不能用了，甚是郁闷。于是慌忙登录SAE，准备一探究竟。</p>
@@ -37,22 +37,22 @@
     
     </summary>
     
-      <category term="SAE" scheme="http://i404.gitcafe.io/tags/SAE/"/>
+      <category term="SAE" scheme="http://i404.github.io/tags/SAE/"/>
     
-      <category term="微信" scheme="http://i404.gitcafe.io/tags/%E5%BE%AE%E4%BF%A1/"/>
+      <category term="微信" scheme="http://i404.github.io/tags/%E5%BE%AE%E4%BF%A1/"/>
     
-      <category term="微信公众平台" scheme="http://i404.gitcafe.io/tags/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%B9%B3%E5%8F%B0/"/>
+      <category term="微信公众平台" scheme="http://i404.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%B9%B3%E5%8F%B0/"/>
     
-      <category term="随笔" scheme="http://i404.gitcafe.io/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="http://i404.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
-      <category term="随笔" scheme="http://i404.gitcafe.io/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="http://i404.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[星期的计算]]></title>
-    <link href="http://i404.gitcafe.io/2015/05/02/date/"/>
-    <id>http://i404.gitcafe.io/2015/05/02/date/</id>
+    <link href="http://i404.github.io/2015/05/02/date/"/>
+    <id>http://i404.github.io/2015/05/02/date/</id>
     <published>2015-05-02T12:24:27.000Z</published>
     <updated>2015-05-04T16:55:54.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xipqt.com1.z0.glb.clouddn.com/think.jpg" class="img-logo"><br>家里有台很老爷的手机。老到什么程度呢，设定的时间最多只能是2014年，2015年就溢出了。没错，就是这么老，就是这么酷炫。<a id="more"></a></p>
@@ -87,18 +87,18 @@
     
     </summary>
     
-      <category term="数学" scheme="http://i404.gitcafe.io/tags/%E6%95%B0%E5%AD%A6/"/>
+      <category term="数学" scheme="http://i404.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
     
-      <category term="蔡勒公式" scheme="http://i404.gitcafe.io/tags/%E8%94%A1%E5%8B%92%E5%85%AC%E5%BC%8F/"/>
+      <category term="蔡勒公式" scheme="http://i404.github.io/tags/%E8%94%A1%E5%8B%92%E5%85%AC%E5%BC%8F/"/>
     
-      <category term="数学" scheme="http://i404.gitcafe.io/categories/%E6%95%B0%E5%AD%A6/"/>
+      <category term="数学" scheme="http://i404.github.io/categories/%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[TP-Link 702N 装 Openwrt]]></title>
-    <link href="http://i404.gitcafe.io/2015/04/30/702N/"/>
-    <id>http://i404.gitcafe.io/2015/04/30/702N/</id>
+    <link href="http://i404.github.io/2015/04/30/702N/"/>
+    <id>http://i404.github.io/2015/04/30/702N/</id>
     <published>2015-04-30T04:08:39.000Z</published>
     <updated>2015-04-30T05:45:48.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xipqt.com1.z0.glb.clouddn.com/openwrt-logo.png" class="img-logo"><br>今天搞了一个TP-Link的702N路由器，又想刷成OpenWRT。我为什么说又，因为已经刷过两个703N了。<a id="more"></a></p>
@@ -115,18 +115,18 @@
     
     </summary>
     
-      <category term="OpenWRT" scheme="http://i404.gitcafe.io/tags/OpenWRT/"/>
+      <category term="OpenWRT" scheme="http://i404.github.io/tags/OpenWRT/"/>
     
-      <category term="路由器" scheme="http://i404.gitcafe.io/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+      <category term="路由器" scheme="http://i404.github.io/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
     
-      <category term="硬件" scheme="http://i404.gitcafe.io/categories/%E7%A1%AC%E4%BB%B6/"/>
+      <category term="硬件" scheme="http://i404.github.io/categories/%E7%A1%AC%E4%BB%B6/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Markdown基础语法]]></title>
-    <link href="http://i404.gitcafe.io/2015/04/27/Markdown/"/>
-    <id>http://i404.gitcafe.io/2015/04/27/Markdown/</id>
+    <link href="http://i404.github.io/2015/04/27/Markdown/"/>
+    <id>http://i404.github.io/2015/04/27/Markdown/</id>
     <published>2015-04-27T02:45:42.000Z</published>
     <updated>2015-04-30T05:47:02.000Z</updated>
     <content type="html"><![CDATA[<p><img src="http://7xipqt.com1.z0.glb.clouddn.com/markdown-logo.jpg" class="img-logo"><br>其实第一次让我写Markdown我是拒绝的。因为我觉得你不能叫我写我就写。首先我要试一下。发现果然有点简洁。现在我不仅自己在用，也推荐我的基友用。<a id="more"></a></p>
@@ -200,7 +200,7 @@
 </blockquote>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">还有一种自动式，加尖括号</span><br><span class="line">&lt;<span class="string">http:</span><span class="comment">//google.com&gt;</span></span><br><span class="line">&lt;linhaoisbr<span class="annotation">@gmail</span>.com&gt;</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p><a href="http://google.com" target="_blank" rel="external">http://google.com</a><br><a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#x6f;&#58;&#108;&#x69;&#x6e;&#104;&#x61;&#111;&#105;&#x73;&#98;&#x72;&#64;&#x67;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#111;&#x6d;">&#108;&#x69;&#x6e;&#104;&#x61;&#111;&#105;&#x73;&#98;&#x72;&#64;&#x67;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#111;&#x6d;</a></p>
+<p><a href="http://google.com" target="_blank" rel="external">http://google.com</a><br><a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#108;&#x69;&#110;&#x68;&#97;&#x6f;&#x69;&#115;&#98;&#x72;&#64;&#x67;&#x6d;&#x61;&#105;&#108;&#x2e;&#99;&#x6f;&#109;">&#108;&#x69;&#110;&#x68;&#97;&#x6f;&#x69;&#115;&#98;&#x72;&#64;&#x67;&#x6d;&#x61;&#105;&#108;&#x2e;&#99;&#x6f;&#109;</a></p>
 </blockquote>
 <h2 id="图片">图片</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">图片和链接十分相似啊，前面加一发!</span><br><span class="line">![<span class="link_label">Logo</span>](<span class="link_url">http://upload.wikimedia.org/wikipedia/commons/b/b2/Blizzard_Entertainment_Logo.svg "暴雪"</span>)</span><br></pre></td></tr></table></figure>
 <p><img src="http://upload.wikimedia.org/wikipedia/commons/b/b2/Blizzard_Entertainment_Logo.svg" alt="Logo" title="暴雪"><br><br><br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">引用式</span><br><span class="line">![<span class="link_label">注释注释</span>][<span class="link_reference">2</span>]</span><br><span class="line">[<span class="link_reference">2</span>]:<span class="link_url">http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png "Github"</span></span><br></pre></td></tr></table></figure></p>
@@ -224,9 +224,9 @@
     
     </summary>
     
-      <category term="Markdown" scheme="http://i404.gitcafe.io/tags/Markdown/"/>
+      <category term="Markdown" scheme="http://i404.github.io/tags/Markdown/"/>
     
-      <category term="Hexo" scheme="http://i404.gitcafe.io/categories/Hexo/"/>
+      <category term="Hexo" scheme="http://i404.github.io/categories/Hexo/"/>
     
   </entry>
   
