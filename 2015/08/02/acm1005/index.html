@@ -4,25 +4,22 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>一次被微信坑的经历 | i404&#39;s Blog</title>
+    <title>ACM 1005 | i404&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="i404">
     
 
     
-    <meta name="description" content="今天突然发现自己的微信公众平台突然挂了，明明什么都没动，竟然就不能用了，甚是郁闷。于是慌忙登录SAE，准备一探究竟。
-我的平台是用 Python 的 WeRoBot 框架做的，看错误代码大概的意思是数据格式不符合规范，我猜是微信公众平台的某些API更新了，所以可能有点不兼容了。还好那部分是实现自定义菜单的，本来就没什么用，注释掉以后发现又可以用了。那就等作者更新或者有兴趣了以后自己改一改吧。">
+    <meta name="description" content="1234567891011121314151617181920212223242526272829303132333435363738394041#include &amp;lt;stdio.h&amp;gt;int a, b, n;char A,B;void dfs(int curr_a, int curr_b )&amp;#123;    if(curr_b != n ) // todo..    &amp;#123;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一次被微信坑的经历">
-<meta property="og:url" content="http://i404.github.io/2015/05/05/wechat/index.html">
+<meta property="og:title" content="ACM 1005">
+<meta property="og:url" content="http://i404.github.io/2015/08/02/acm1005/index.html">
 <meta property="og:site_name" content="i404's Blog">
-<meta property="og:description" content="今天突然发现自己的微信公众平台突然挂了，明明什么都没动，竟然就不能用了，甚是郁闷。于是慌忙登录SAE，准备一探究竟。
-我的平台是用 Python 的 WeRoBot 框架做的，看错误代码大概的意思是数据格式不符合规范，我猜是微信公众平台的某些API更新了，所以可能有点不兼容了。还好那部分是实现自定义菜单的，本来就没什么用，注释掉以后发现又可以用了。那就等作者更新或者有兴趣了以后自己改一改吧。">
+<meta property="og:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041#include &amp;lt;stdio.h&amp;gt;int a, b, n;char A,B;void dfs(int curr_a, int curr_b )&amp;#123;    if(curr_b != n ) // todo..    &amp;#123;">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一次被微信坑的经历">
-<meta name="twitter:description" content="今天突然发现自己的微信公众平台突然挂了，明明什么都没动，竟然就不能用了，甚是郁闷。于是慌忙登录SAE，准备一探究竟。
-我的平台是用 Python 的 WeRoBot 框架做的，看错误代码大概的意思是数据格式不符合规范，我猜是微信公众平台的某些API更新了，所以可能有点不兼容了。还好那部分是实现自定义菜单的，本来就没什么用，注释掉以后发现又可以用了。那就等作者更新或者有兴趣了以后自己改一改吧。">
+<meta name="twitter:title" content="ACM 1005">
+<meta name="twitter:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041#include &amp;lt;stdio.h&amp;gt;int a, b, n;char A,B;void dfs(int curr_a, int curr_b )&amp;#123;    if(curr_b != n ) // todo..    &amp;#123;">
 
     
     <link rel="alternative" href="/atom.xml" title="i404&#39;s Blog" type="application/atom+xml">
@@ -83,43 +80,33 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/05/05/wechat/" title="一次被微信坑的经历" itemprop="url">一次被微信坑的经历</a>
+      <a href="/2015/08/02/acm1005/" title="ACM 1005" itemprop="url">ACM 1005</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="i404" target="_blank" itemprop="author">i404</a>
 		
   <p class="article-time">
-    <time datetime="2015-05-04T16:59:48.000Z" itemprop="datePublished"> 发表于 2015-05-05</time>
+    <time datetime="2015-08-01T16:00:00.000Z" itemprop="datePublished"> 发表于 2015-08-02</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
-		<p>今天突然发现自己的微信公众平台突然挂了，明明什么都没动，竟然就不能用了，甚是郁闷。于是慌忙登录SAE，准备一探究竟。</p>
-<p>我的平台是用 Python 的 <a href="http://werobot.readthedocs.org/en/latest/" target="_blank" rel="external">WeRoBot</a> 框架做的，看错误代码大概的意思是数据格式不符合规范，我猜是微信公众平台的某些API更新了，所以可能有点不兼容了。还好那部分是实现自定义菜单的，本来就没什么用，注释掉以后发现又可以用了。那就等作者更新或者有兴趣了以后自己改一改吧。<a id="more"></a></p>
-<p>后来发现抠门的腾讯竟然免费提供了语言识别的功能，心想反正老夫以前在测试平台上能用，那现在稍微改改就可以了。</p>
-<p>后来发现根本不是想象中的那样啊！一直都输出None啊，妈的这并不科学啊。会不会是API更新了呢，和以前不一样了呢？ 于是我就去看文档啊，发现这个接口还是一毛一样啊，丝毫没变啊，妈的那为什么会不行呢？</p>
-<p>于是我不能忍啊，不能忍～<br>想看看输出的信息啊。鱿鱼搭在SAE上的后端程序看输出好像有点难度啊，我就在本地写了个简单的socket的服务端，后端程序做客户端发消息过来。</p>
-<p>事实证明，发过来的XML是好的，并不是坏的，也没有加特效。那为什么不行呢呢呢呢？？</p>
-<p>接下来就撤下了socket，发现还是不能用啊，那再看看代码有什么问题吧。 </p>
-<p>啊，找不粗来啊，为什么不行啊，这是为什么啊？。。算了，下次再改吧。</p>
-<p>嗯，正当我要放弃时，我特么发现语音识别功能已经可以用了！！ 你特么是不是在逗我啊？ 妈的等于说是你服务器不稳定？？妈的被坑惨了。</p>
-<p>看来我还是太年轻了。。。</p>
-  
+		<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span> &lt;stdio.h&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> a, b, n;</span><br><span class="line"><span class="keyword">char</span> A,B;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> curr_a, <span class="keyword">int</span> curr_b )</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(curr_b != n ) <span class="comment">// todo..</span></span><br><span class="line">    &#123;</span><br><span class="line">            <span class="keyword">if</span> (curr_b == <span class="number">0</span>)</span><br><span class="line">                &#123;<span class="built_in">printf</span>(<span class="string">"fill %c\n"</span>,B); curr_b = b;&#125;</span><br><span class="line">            <span class="keyword">if</span> (curr_a == a)</span><br><span class="line">                &#123;<span class="built_in">printf</span>(<span class="string">"empty %c\n"</span>,A); curr_a = <span class="number">0</span>;&#125;</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"pour %c %c\n"</span>,B,A);</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">if</span> (curr_b &gt;= (a - curr_a))</span><br><span class="line">                &#123;curr_b -= (a - curr_a); curr_a = a;&#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                &#123;curr_a += curr_b; curr_b = <span class="number">0</span>;&#125;</span><br><span class="line">            dfs(curr_a,curr_b);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[])</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> t;</span><br><span class="line">    <span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%d %d %d"</span>,&amp;a,&amp;b,&amp;n)!= EOF)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (b == n)</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"fill B\n"</span>);</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (a &gt;= n)</span><br><span class="line">                &#123;t = a; a = b; b = t; A = <span class="string">'B'</span>; B = <span class="string">'A'</span>;&#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                &#123;A = <span class="string">'A'</span>; B = <span class="string">'B'</span>;&#125;</span><br><span class="line">            dfs(<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"success\n"</span>);</span><br><span class="line">    &#125;   </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/随笔/">随笔</a>
+  <a class="article-category-link" href="/categories/acm/">acm</a>
 </div>
 
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/SAE/">SAE</a><a href="/tags/微信/">微信</a><a href="/tags/微信公众平台/">微信公众平台</a><a href="/tags/随笔/">随笔</a>
+  <span></span> <a href="/tags/acm/">acm</a>
   </div>
 
 </div>
@@ -128,7 +115,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://i404.github.io/2015/05/05/wechat/" data-title="一次被微信坑的经历 | i404&#39;s Blog" data-tsina="2179056287" class="share clearfix">
+	  <div data-url="http://i404.github.io/2015/08/02/acm1005/" data-title="ACM 1005 | i404&#39;s Blog" data-tsina="2179056287" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -141,19 +128,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/07/28/acm2376/" title="ACM 2376">
-  <strong>上一篇：</strong><br/>
-  <span>
-  ACM 2376</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015/05/02/date/"  title="星期的计算">
+<a href="/2015/07/28/acm2376/"  title="ACM 2376">
  <strong>下一篇：</strong><br/> 
- <span>星期的计算
+ <span>ACM 2376
 </span>
 </a>
 </div>
@@ -162,7 +141,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2015/05/05/wechat/" data-title="一次被微信坑的经历" data-url="http://i404.github.io/2015/05/05/wechat/"></div>
+	<div class="ds-thread" data-thread-key="2015/08/02/acm1005/" data-title="ACM 1005" data-url="http://i404.github.io/2015/08/02/acm1005/"></div>
 </section>
 
 
