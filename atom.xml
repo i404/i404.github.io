@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://i404.github.io/"/>
-  <updated>2015-08-18T04:13:47.000Z</updated>
+  <updated>2015-08-18T04:45:22.000Z</updated>
   <id>http://i404.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://i404.github.io/2015/08/18/meteor_tips/"/>
     <id>http://i404.github.io/2015/08/18/meteor_tips/</id>
     <published>2015-08-18T04:00:00.000Z</published>
-    <updated>2015-08-18T04:13:47.000Z</updated>
+    <updated>2015-08-18T04:45:22.000Z</updated>
     <content type="html"><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongod --auth --bind_ip <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span> --dbpath path</span><br></pre></td></tr></table></figure>
 <hr>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BIND_IP=<span class="number">127.0</span>.<span class="number">0.1</span> meteor run</span><br></pre></td></tr></table></figure>
@@ -29,6 +29,8 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pymongo</span><br><span class="line">client = pymongo.MongoClient(<span class="string">'mongodb://user:passwd@ip:port/database'</span>)</span><br></pre></td></tr></table></figure>
 <hr>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongo -u user -p passwd ip:port/database</span><br></pre></td></tr></table></figure>
+<hr>
+<p>mongo shell 炒鸡管理员<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">use admin</span><br><span class="line">db.createUser(</span><br><span class="line">   &#123;</span><br><span class="line">     user: <span class="string">"appAdmin"</span>,</span><br><span class="line">     pwd: <span class="string">"password"</span>,</span><br><span class="line">     roles:</span><br><span class="line">       [</span><br><span class="line">         &#123; role: <span class="string">"readWrite"</span>, db: <span class="string">"config"</span> &#125;,</span><br><span class="line">         <span class="string">"clusterAdmin"</span></span><br><span class="line">       ]</span><br><span class="line">   &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class=]]>
@@ -262,7 +264,7 @@
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#36824;&#26377;&#19968;&#31181;&#33258;&#21160;&#24335;&#65292;&#21152;&#23574;&#25324;&#21495;&#10;&#60;http://google.com&#62;&#10;&#60;linhaoisbr@gmail.com&#62;</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p><a href="http://google.com" target="_blank" rel="external">http://google.com</a><br><a href="&#109;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#x6c;&#105;&#110;&#104;&#97;&#x6f;&#x69;&#x73;&#x62;&#114;&#64;&#103;&#109;&#97;&#x69;&#108;&#x2e;&#x63;&#111;&#x6d;">&#x6c;&#105;&#110;&#104;&#97;&#x6f;&#x69;&#x73;&#x62;&#114;&#64;&#103;&#109;&#97;&#x69;&#108;&#x2e;&#x63;&#111;&#x6d;</a></p>
+<p><a href="http://google.com" target="_blank" rel="external">http://google.com</a><br><a href="&#109;&#97;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x6c;&#x69;&#110;&#x68;&#97;&#x6f;&#x69;&#x73;&#x62;&#x72;&#x40;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#111;&#x6d;">&#x6c;&#x69;&#110;&#x68;&#97;&#x6f;&#x69;&#x73;&#x62;&#x72;&#x40;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#111;&#x6d;</a></p>
 </blockquote>
 <h2 id="图片">图片</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#22270;&#29255;&#21644;&#38142;&#25509;&#21313;&#20998;&#30456;&#20284;&#21834;&#65292;&#21069;&#38754;&#21152;&#19968;&#21457;!&#10;![Logo](http://upload.wikimedia.org/wikipedia/commons/b/b2/Blizzard_Entertainment_Logo.svg &#34;&#26292;&#38634;&#34;)</span><br></pre></td></tr></table></figure>
 <p><img src="http://upload.wikimedia.org/wikipedia/commons/b/b2/Blizzard_Entertainment_Logo.svg" alt="Logo" title="暴雪"><br><br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#24341;&#29992;&#24335;&#10;![&#27880;&#37322;&#27880;&#37322;][2]&#10;[2]:http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png &#34;Github&#34;</span><br></pre></td></tr></table></figure></p>
