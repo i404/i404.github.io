@@ -82,6 +82,77 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/2015/08/18/meteor_tips/" title="Meteor Mongodb" itemprop="url">Meteor Mongodb</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="i404" target="_blank" itemprop="author">i404</a>
+		
+  <p class="article-time">
+    <time datetime="2015-08-18T04:00:00.000Z" itemprop="datePublished"> 发表于 2015-08-18</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongod --auth --bind_ip <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span> --dbpath path</span><br></pre></td></tr></table></figure>
+<hr>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BIND_IP=<span class="number">127.0</span>.<span class="number">0.1</span> meteor run</span><br></pre></td></tr></table></figure>
+<hr>
+<p>每次重开一个终端或主机重启的时候，环境变量会还原，需要重新导入。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> MONGO_URL=mongodb://user:passwd@ip:port/database</span><br></pre></td></tr></table></figure></p>
+<hr>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pymongo</span><br><span class="line">client = pymongo.MongoClient(<span class="string">'mongodb://user:passwd@ip:port/database'</span>)</span><br></pre></td></tr></table></figure>
+<hr>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongo -u user -p passwd ip:port/database</span><br></pre></td></tr></table></figure>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Meteor/">Meteor</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Monodb/">Monodb</a><a href="/tags/Monteor/">Monteor</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2015/08/18/meteor_tips/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/08/18/meteor_tips/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/2015/08/02/acm1005/" title="ACM 1005" itemprop="url">ACM 1005</a>
   </h1>
   <p class="article-author">By
@@ -329,70 +400,6 @@
 
 
 
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/04/30/702N/" title="TP-Link 702N 装 Openwrt" itemprop="url">TP-Link 702N 装 Openwrt</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="i404" target="_blank" itemprop="author">i404</a>
-		
-  <p class="article-time">
-    <time datetime="2015-04-30T04:08:39.000Z" itemprop="datePublished"> 发表于 2015-04-30</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p><img src="http://7xipqt.com1.z0.glb.clouddn.com/openwrt-logo.png" class="img-logo" /><br>今天搞了一个TP-Link的702N路由器，又想刷成OpenWRT。我为什么说又，因为已经刷过两个703N了。
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2015/04/30/702N/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/硬件/">硬件</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/OpenWRT/">OpenWRT</a><a href="/tags/路由器/">路由器</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/04/30/702N/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/04/30/702N/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
 
   <nav id="page-nav" class="clearfix">
     <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next<span></span></a>
@@ -412,6 +419,10 @@
 		
 		  
 			<li><a href="/categories/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Meteor/" title="Meteor">Meteor<sup>1</sup></a></li>
 		  
 		
 		  
@@ -440,7 +451,7 @@
   <div class="tagcloudlist">
     <p class="asidetitle">标签</p>
     <div class="tagcloudlist clearfix">
-       <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/OpenWRT/" style="font-size: 10px;">OpenWRT</a> <a href="/tags/SAE/" style="font-size: 10px;">SAE</a> <a href="/tags/acm/" style="font-size: 20px;">acm</a> <a href="/tags/微信/" style="font-size: 10px;">微信</a> <a href="/tags/微信公众平台/" style="font-size: 10px;">微信公众平台</a> <a href="/tags/数学/" style="font-size: 10px;">数学</a> <a href="/tags/蔡勒公式/" style="font-size: 10px;">蔡勒公式</a> <a href="/tags/路由器/" style="font-size: 10px;">路由器</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+       <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Monodb/" style="font-size: 10px;">Monodb</a> <a href="/tags/Monteor/" style="font-size: 10px;">Monteor</a> <a href="/tags/OpenWRT/" style="font-size: 10px;">OpenWRT</a> <a href="/tags/SAE/" style="font-size: 10px;">SAE</a> <a href="/tags/acm/" style="font-size: 20px;">acm</a> <a href="/tags/微信/" style="font-size: 10px;">微信</a> <a href="/tags/微信公众平台/" style="font-size: 10px;">微信公众平台</a> <a href="/tags/数学/" style="font-size: 10px;">数学</a> <a href="/tags/蔡勒公式/" style="font-size: 10px;">蔡勒公式</a> <a href="/tags/路由器/" style="font-size: 10px;">路由器</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
     </div>
   </div>
 
