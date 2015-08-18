@@ -4,7 +4,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://i404.github.io/"/>
-  <updated>2015-08-18T04:45:22.000Z</updated>
+  <updated>2015-08-18T13:04:23.000Z</updated>
   <id>http://i404.github.io/</id>
   
   <author>
@@ -13,6 +13,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[在OSX上安装CV]]></title>
+    <link href="http://i404.github.io/2015/08/18/insert%20CV/"/>
+    <id>http://i404.github.io/2015/08/18/insert CV/</id>
+    <published>2015-08-18T13:00:00.000Z</published>
+    <updated>2015-08-18T13:04:23.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="OpenCV的安装">OpenCV的安装</h2><p>可以下载源码然后用cmake编译，也可以直接用<code>brew</code>安装。<a id="more"></a></p>
+<p>直接输入 <code>brew install opencv</code> 会报错</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Error: No available formula <span class="keyword">for</span> opencv </span><br><span class="line">==&gt; Searching formulae...</span><br><span class="line">==&gt; Searching taps...</span><br><span class="line">homebrew/science/opencv</span><br></pre></td></tr></table></figure>
+<p>意思是没找到opencv，在扩展服务中找到了，接下来就执行 <code>brew tap home/science</code></p>
+<p>结束后可以选择 <code>brew install opencv</code> 全安装 ，也可以部分安装<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">--<span class="number">32</span>-bit</span><br><span class="line">    Build <span class="number">32</span>-bit only</span><br><span class="line">--c++<span class="number">11</span></span><br><span class="line">    Build using C++<span class="number">11</span> mode</span><br><span class="line">--with-ffmpeg</span><br><span class="line">    Build with ffmpeg support</span><br><span class="line">--with-java</span><br><span class="line">    Build with Java support</span><br><span class="line">--with-openni</span><br><span class="line">    Build with openni support</span><br><span class="line">--with-qt</span><br><span class="line">    Build the Qt4 backend to HighGUI</span><br><span class="line">--with-tbb</span><br><span class="line">    Enable parallel code <span class="keyword">in</span> OpenCV using Intel TBB</span><br><span class="line">--without-eigen</span><br><span class="line">    Build without eigen support</span><br><span class="line">--without-opencl</span><br><span class="line">    Disable gpu code <span class="keyword">in</span> OpenCV using OpenCL</span><br></pre></td></tr></table></figure></p>
+<h2 id="Python支持">Python支持</h2><p>OpenCV已经安装好了，在 <code>/usr/local/Cellar/opencv/2.x.x/</code><br>Python的模块的默认位置在 <code>/Library/Python/2.7/site-packages/</code></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /Library/Python/<span class="number">2.7</span>/site-packages/</span><br><span class="line">ln /usr/<span class="built_in">local</span>/Cellar/opencv/<span class="number">2</span>.x.x/lib/python2.<span class="number">7</span>/site-packages/cv.py cv.py</span><br><span class="line">ln /usr/<span class="built_in">local</span>/Cellar/opencv/<span class="number">2</span>.x.x/lib/python2.<span class="number">7</span>/site-packages/cv2.so cv2.so</span><br></pre></td></tr></table></figure>
+<p>然后就可以 <code>import cv</code> 了</p>
+<h2 id="C++_XCode_支持">C++_XCode 支持</h2><p>坑</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="OpenCV的安装">OpenCV的安装</h2><p>可以下载源码然后用cmake编译，也可以直接用<code>brew</code>安装。]]>
+    
+    </summary>
+    
+      <category term="OSX" scheme="http://i404.github.io/tags/OSX/"/>
+    
+      <category term="OpenCV" scheme="http://i404.github.io/tags/OpenCV/"/>
+    
+      <category term="OpenCV" scheme="http://i404.github.io/categories/OpenCV/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Meteor Mongodb]]></title>
@@ -264,7 +293,7 @@
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#36824;&#26377;&#19968;&#31181;&#33258;&#21160;&#24335;&#65292;&#21152;&#23574;&#25324;&#21495;&#10;&#60;http://google.com&#62;&#10;&#60;linhaoisbr@gmail.com&#62;</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p><a href="http://google.com" target="_blank" rel="external">http://google.com</a><br><a href="&#109;&#97;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x6c;&#x69;&#110;&#x68;&#97;&#x6f;&#x69;&#x73;&#x62;&#x72;&#x40;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#111;&#x6d;">&#x6c;&#x69;&#110;&#x68;&#97;&#x6f;&#x69;&#x73;&#x62;&#x72;&#x40;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#111;&#x6d;</a></p>
+<p><a href="http://google.com" target="_blank" rel="external">http://google.com</a><br><a href="&#x6d;&#97;&#105;&#x6c;&#116;&#x6f;&#x3a;&#x6c;&#x69;&#110;&#104;&#x61;&#x6f;&#x69;&#x73;&#x62;&#114;&#x40;&#103;&#109;&#97;&#x69;&#108;&#x2e;&#99;&#x6f;&#109;">&#x6c;&#x69;&#110;&#104;&#x61;&#x6f;&#x69;&#x73;&#x62;&#114;&#x40;&#103;&#109;&#97;&#x69;&#108;&#x2e;&#99;&#x6f;&#109;</a></p>
 </blockquote>
 <h2 id="图片">图片</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#22270;&#29255;&#21644;&#38142;&#25509;&#21313;&#20998;&#30456;&#20284;&#21834;&#65292;&#21069;&#38754;&#21152;&#19968;&#21457;!&#10;![Logo](http://upload.wikimedia.org/wikipedia/commons/b/b2/Blizzard_Entertainment_Logo.svg &#34;&#26292;&#38634;&#34;)</span><br></pre></td></tr></table></figure>
 <p><img src="http://upload.wikimedia.org/wikipedia/commons/b/b2/Blizzard_Entertainment_Logo.svg" alt="Logo" title="暴雪"><br><br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#24341;&#29992;&#24335;&#10;![&#27880;&#37322;&#27880;&#37322;][2]&#10;[2]:http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png &#34;Github&#34;</span><br></pre></td></tr></table></figure></p>

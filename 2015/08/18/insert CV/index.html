@@ -4,24 +4,23 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>星期的计算 | i404&#39;s Blog</title>
+    <title>在OSX上安装CV | i404&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="i404">
     
 
     
-    <meta name="description" content="家里有台很老爷的手机。老到什么程度呢，设定的时间最多只能是2014年，2015年就溢出了。没错，就是这么老，就是这么酷炫。">
+    <meta name="description" content="OpenCV的安装可以下载源码然后用cmake编译，也可以直接用brew安装。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="星期的计算">
-<meta property="og:url" content="http://i404.github.io/2015/05/02/date/index.html">
+<meta property="og:title" content="在OSX上安装CV">
+<meta property="og:url" content="http://i404.github.io/2015/08/18/insert CV/index.html">
 <meta property="og:site_name" content="i404's Blog">
-<meta property="og:description" content="家里有台很老爷的手机。老到什么程度呢，设定的时间最多只能是2014年，2015年就溢出了。没错，就是这么老，就是这么酷炫。">
-<meta property="og:image" content="http://7xipqt.com1.z0.glb.clouddn.com/think.jpg">
-<meta property="og:updated_time" content="2015-08-15T16:25:44.000Z">
+<meta property="og:description" content="OpenCV的安装可以下载源码然后用cmake编译，也可以直接用brew安装。">
+<meta property="og:updated_time" content="2015-08-18T13:04:23.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="星期的计算">
-<meta name="twitter:description" content="家里有台很老爷的手机。老到什么程度呢，设定的时间最多只能是2014年，2015年就溢出了。没错，就是这么老，就是这么酷炫。">
+<meta name="twitter:title" content="在OSX上安装CV">
+<meta name="twitter:description" content="OpenCV的安装可以下载源码然后用cmake编译，也可以直接用brew安装。">
 
     
     <link rel="alternative" href="/atom.xml" title="i404&#39;s Blog" type="application/atom+xml">
@@ -82,14 +81,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/05/02/date/" title="星期的计算" itemprop="url">星期的计算</a>
+      <a href="/2015/08/18/insert CV/" title="在OSX上安装CV" itemprop="url">在OSX上安装CV</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="i404" target="_blank" itemprop="author">i404</a>
 		
   <p class="article-time">
-    <time datetime="2015-05-02T12:24:27.000Z" itemprop="datePublished"> 发表于 2015-05-02</time>
+    <time datetime="2015-08-18T13:00:00.000Z" itemprop="datePublished"> 发表于 2015-08-18</time>
     
   </p>
 </header>
@@ -98,36 +97,19 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#怎么算呢"><span class="toc-number">1.</span> <span class="toc-text">怎么算呢</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#能不能仅仅通过日期计算星期啊"><span class="toc-number">2.</span> <span class="toc-text">能不能仅仅通过日期计算星期啊</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#能不能更简单一点啊"><span class="toc-number">3.</span> <span class="toc-text">能不能更简单一点啊</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#能不能再给力一点啊"><span class="toc-number">4.</span> <span class="toc-text">能不能再给力一点啊</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#刚才提到的蔡勒公式是毛啊"><span class="toc-number">5.</span> <span class="toc-text">刚才提到的蔡勒公式是毛啊</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#OpenCV的安装"><span class="toc-number">1.</span> <span class="toc-text">OpenCV的安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Python支持"><span class="toc-number">2.</span> <span class="toc-text">Python支持</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#C++_XCode_支持"><span class="toc-number">3.</span> <span class="toc-text">C++_XCode 支持</span></a></li></ol>
 		
 		</div>
 		
-		<p><img src="http://7xipqt.com1.z0.glb.clouddn.com/think.jpg" class="img-logo"><br>家里有台很老爷的手机。老到什么程度呢，设定的时间最多只能是2014年，2015年就溢出了。没错，就是这么老，就是这么酷炫。<a id="more"></a></p>
-<p>如果我想继续使用这个手机，就算年份不对，起码星期要对得上吧。</p>
-<p>可能上面那句话说得不是很清楚，其实就是假设2015年1月1日是星期一，那我要找个1月1日也同为星期一的年份，这样看日期就顺眼多了。</p>
-<h2 id="怎么算呢">怎么算呢</h2><p>有同学就应该会这样说，365 mod 7 = 1，就是说每过一年同日期的星期就要相差一天，再考虑到2月的特殊性，过了闰年则要再多算一天，2015年附近又特么没有特别的年份，所以最近的年份就是2015 - 6 = 2009年了。</p>
-<h2 id="能不能仅仅通过日期计算星期啊">能不能仅仅通过日期计算星期啊</h2><p>“那我能不能通过日期计算星期呢？”，我当时就这么想的。那么到底能不能呢，然后我觉得应该是有可能的，因为假如我知道今天1992年4月14号是星期三，现在我想知道今天2015年5月1日是星期几，通过上面的思路，只要算出两个日期之间相差的天数，就可以知道那一天的星期数了。</p>
-<p>但是，这个天数好像算起来也有点麻烦啊，要分三段来算:</p>
-<blockquote>
-<ul>
-<li>1992 4 14 ~ 1992 12 31</li>
-<li>1993 1 1 ~ 2014 12 31</li>
-<li>2015 1 1 ~ 2015 5 1</li>
-</ul>
-</blockquote>
-<p>我靠，那我要是知道1992年12月31日是星期几不就可以不用算第一段了？等等，用公元年12月31日好像很棒啊，第二段的都可以简单一点，简直完美啊。<br>按公历的定义，0年12月31日应该是星期天，设$Y$是年份，$D$为第三段的天数，$w$为星期数，那么就可以这样写<br>$$w = \left( (Y-1)\times 365 + \lfloor\frac {Y-1}{4}\rfloor - \lfloor\frac {Y-1}{100}\rfloor +\lfloor\frac {Y-1}{400}\rfloor + D\right) \mod 7$$</p>
-<h2 id="能不能更简单一点啊">能不能更简单一点啊</h2><p>这时候就应该有同学喷我，根本没有简单的公式，上面那个 $D$ 还是要算的，真是太麻烦了。<br>那就给 $D$ 也搞个公式好了。</p>
-<p>首先列一张正常的月份天数的表格</p>
-<p><table><tr><td bgcolor="#66ccff"><font color="#FFFFFF">月份</font></td><td>1月</td><td>2月</td><td>3月</td><td>4月</td><td>5月</td><td>6月</td><td>7月</td><td>8月</td><td>9月</td><td>10月</td><td>11月</td><td>12月</td></tr><tr><td bgcolor="#66ccff"><font color="#FFFFFF">天数</font></td><td>31</td><td>28/29</td><td>31</td><td>30</td><td>31</td><td>30</td><td>31</td><td>31</td><td>30</td><td>31</td><td>30</td><td>31</td></tr></table><br>反正不影响星期数，我们把天数都减28，相当于$\mod 7$，我们可以得到这样的一张表</p>
-<p><table><tr><td bgcolor="#66ccff"><font color="#FFFFFF">月份</font></td><td>1月</td><td>2月</td><td>3月</td><td>4月</td><td>5月</td><td>6月</td><td>7月</td><td>8月</td><td>9月</td><td>10月</td><td>11月</td><td>12月</td></tr><tr><td bgcolor="#66ccff"><font color="#FFFFFF">剩余天数</font></td><td>3</td><td>0/1</td><td>3</td><td>2</td><td>3</td><td>2</td><td>3</td><td>3</td><td>2</td><td>3</td><td>2</td><td>3</td></tr><tr><td bgcolor="#66ccff"><font color="#FFFFFF">平年累计</font></td><td>3</td><td>3</td><td>7</td><td>9</td><td>11</td><td>13</td><td>16</td><td>19</td><td>21</td><td>24</td><td>26</td><td>29</td></tr></table><br>然后就可以看到除了一月和二月比较特别以外，3到7月和8到12月都是3 2 3 2 3，五个一循环，那就可以尝试使用取整符号构造一下函数好了<br>$$<br>\begin{equation}<br>D =<br>\left\{<br>\begin{array}{c}<br>d,m=1  \\<br>d+31,m=2  \\<br>\lfloor\frac {13(m+1)}{5}\rfloor - 7 + (m-1) \times 28 + d + i,m\geqslant 3<br>\end{array}<br>\right.<br>\end{equation}<br>$$</p>
-<p>这里解释一下 $\lfloor\frac {13(m+1)}{5}\rfloor - 7 $ 这个项，这个就是根据上面表格中的平年累计天数的数据构造（蒙）出来的的项，然后加上后面的$(m-1) \times 28$，那么结果就是在这个日期之前的所有月份的总天数，这个 $i$ 则用来表示是不是闰年。<br>这时候把这个公式代回到上面年份的公式上去，就爽多了。</p>
-<h2 id="能不能再给力一点啊">能不能再给力一点啊</h2><p>有同学看到这里会这样说，妈的你这公式又分情况又有个 $i$，能不能都不要啊，再简洁一点啊！！</p>
-<p>要是我没有看过 <strong>蔡勒公式</strong>，我肯定会这样说：妈的这是不可能的，老夫可是是专业解说啊，1月2月卡在前面的位置，不可能形成规律的，不可能能化简的啊。</p>
-<p>现在我会轻轻地说：当然有啦，不过要变通一下，要把1月和2月看成前以前的13月和14月就好了！</p>
-<p>因为按照规律，3 2 3 2 3 五个一循环，12月接下来的月份的剩余天数也要是3啊，一月正好符合这个规律，所以可以名正言顺地当13月啦。至于2月，妈的老子都是最后一个月啦，前面天数加起来再加个 $d$ 就好了，谁特么还管闰不闰月啊！</p>
-<p>所以，这个公式就变成这样了<br>$$D = \lfloor\frac {13(m+1)}{5}\rfloor - 7 + (m-1) \times 28 + d ,3\leqslant m\leqslant14$$<br>那现在我们把上面化简好的公式代入到原来的星期公式里去试试<br>$$w = \left( (Y-1)\times 365 + \lfloor\frac {Y-1}{4}\rfloor - \lfloor\frac {Y-1}{100}\rfloor +\lfloor\frac {Y-1}{400}\rfloor + \lfloor\frac {13(m+1)}{5}\rfloor - 7 + (m-1) \times 28 + d \right) \mod 7$$<br>由于外面是$\mod 7$，那么可以化简成这样<br>$$w = \left( (Y-1) + \lfloor\frac {Y-1}{4}\rfloor - \lfloor\frac {Y-1}{100}\rfloor +\lfloor\frac {Y-1}{400}\rfloor + \lfloor\frac {13(m+1)}{5}\rfloor+ d \right) \mod 7$$<br>现在看这公式是不是已经很帅了？</p>
-<h2 id="刚才提到的蔡勒公式是毛啊">刚才提到的蔡勒公式是毛啊</h2><p>这个问题有点好，以至于没法马上回答（大雾）。<br>其实把我们上面得到的公式再调整得酷炫一点，就变成蔡勒公式了。</p>
-<p>$$w = \left(y+[\frac {y}{4}] + [\frac {c}{4}] - 2c + [\frac{26(m+1)} {10}] + d -1 \right)$$<br>先贴个蔡勒公式，挖个坑下次再补。</p>
+		<h2 id="OpenCV的安装">OpenCV的安装</h2><p>可以下载源码然后用cmake编译，也可以直接用<code>brew</code>安装。<a id="more"></a></p>
+<p>直接输入 <code>brew install opencv</code> 会报错</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Error: No available formula <span class="keyword">for</span> opencv </span><br><span class="line">==&gt; Searching formulae...</span><br><span class="line">==&gt; Searching taps...</span><br><span class="line">homebrew/science/opencv</span><br></pre></td></tr></table></figure>
+<p>意思是没找到opencv，在扩展服务中找到了，接下来就执行 <code>brew tap home/science</code></p>
+<p>结束后可以选择 <code>brew install opencv</code> 全安装 ，也可以部分安装<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">--<span class="number">32</span>-bit</span><br><span class="line">    Build <span class="number">32</span>-bit only</span><br><span class="line">--c++<span class="number">11</span></span><br><span class="line">    Build using C++<span class="number">11</span> mode</span><br><span class="line">--with-ffmpeg</span><br><span class="line">    Build with ffmpeg support</span><br><span class="line">--with-java</span><br><span class="line">    Build with Java support</span><br><span class="line">--with-openni</span><br><span class="line">    Build with openni support</span><br><span class="line">--with-qt</span><br><span class="line">    Build the Qt4 backend to HighGUI</span><br><span class="line">--with-tbb</span><br><span class="line">    Enable parallel code <span class="keyword">in</span> OpenCV using Intel TBB</span><br><span class="line">--without-eigen</span><br><span class="line">    Build without eigen support</span><br><span class="line">--without-opencl</span><br><span class="line">    Disable gpu code <span class="keyword">in</span> OpenCV using OpenCL</span><br></pre></td></tr></table></figure></p>
+<h2 id="Python支持">Python支持</h2><p>OpenCV已经安装好了，在 <code>/usr/local/Cellar/opencv/2.x.x/</code><br>Python的模块的默认位置在 <code>/Library/Python/2.7/site-packages/</code></p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /Library/Python/<span class="number">2.7</span>/site-packages/</span><br><span class="line">ln /usr/<span class="built_in">local</span>/Cellar/opencv/<span class="number">2</span>.x.x/lib/python2.<span class="number">7</span>/site-packages/cv.py cv.py</span><br><span class="line">ln /usr/<span class="built_in">local</span>/Cellar/opencv/<span class="number">2</span>.x.x/lib/python2.<span class="number">7</span>/site-packages/cv2.so cv2.so</span><br></pre></td></tr></table></figure>
+<p>然后就可以 <code>import cv</code> 了</p>
+<h2 id="C++_XCode_支持">C++_XCode 支持</h2><p>坑</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -135,13 +117,13 @@
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/数学/">数学</a>
+  <a class="article-category-link" href="/categories/OpenCV/">OpenCV</a>
 </div>
 
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/数学/">数学</a><a href="/tags/蔡勒公式/">蔡勒公式</a>
+  <span></span> <a href="/tags/OSX/">OSX</a><a href="/tags/OpenCV/">OpenCV</a>
   </div>
 
 </div>
@@ -150,7 +132,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://i404.github.io/2015/05/02/date/" data-title="星期的计算 | i404&#39;s Blog" data-tsina="2179056287" class="share clearfix">
+	  <div data-url="http://i404.github.io/2015/08/18/insert CV/" data-title="在OSX上安装CV | i404&#39;s Blog" data-tsina="2179056287" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -163,19 +145,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/05/05/wechat/" title="一次被微信坑的经历">
-  <strong>上一篇：</strong><br/>
-  <span>
-  一次被微信坑的经历</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2015/04/30/702N/"  title="TP-Link 702N 装 Openwrt">
+<a href="/2015/08/18/meteor_tips/"  title="Meteor Mongodb">
  <strong>下一篇：</strong><br/> 
- <span>TP-Link 702N 装 Openwrt
+ <span>Meteor Mongodb
 </span>
 </a>
 </div>
@@ -184,7 +158,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2015/05/02/date/" data-title="星期的计算" data-url="http://i404.github.io/2015/05/02/date/"></div>
+	<div class="ds-thread" data-thread-key="2015/08/18/insert CV/" data-title="在OSX上安装CV" data-url="http://i404.github.io/2015/08/18/insert CV/"></div>
 </section>
 
 
@@ -194,7 +168,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#怎么算呢"><span class="toc-number">1.</span> <span class="toc-text">怎么算呢</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#能不能仅仅通过日期计算星期啊"><span class="toc-number">2.</span> <span class="toc-text">能不能仅仅通过日期计算星期啊</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#能不能更简单一点啊"><span class="toc-number">3.</span> <span class="toc-text">能不能更简单一点啊</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#能不能再给力一点啊"><span class="toc-number">4.</span> <span class="toc-text">能不能再给力一点啊</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#刚才提到的蔡勒公式是毛啊"><span class="toc-number">5.</span> <span class="toc-text">刚才提到的蔡勒公式是毛啊</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#OpenCV的安装"><span class="toc-number">1.</span> <span class="toc-text">OpenCV的安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Python支持"><span class="toc-number">2.</span> <span class="toc-text">Python支持</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#C++_XCode_支持"><span class="toc-number">3.</span> <span class="toc-text">C++_XCode 支持</span></a></li></ol>
  
   </div>
 
