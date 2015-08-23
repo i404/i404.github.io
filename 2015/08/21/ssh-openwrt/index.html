@@ -25,7 +25,7 @@ cat id_dsa.pub &amp;gt;authorized_keys
 ssh -NfR 2222:localhost:22 httpd@100.100.100.100 -p 22
 ps axu | grep ssh
 netstat -antp | grep 22">
-<meta property="og:updated_time" content="2015-08-23T18:19:17.000Z">
+<meta property="og:updated_time" content="2015-08-23T18:21:08.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ssh openwrt">
 <meta name="twitter:description" content="scp ~/.ssh/id_rsa.pub root@192.168.8.1:/etc/dropbear/authorized_keys
@@ -113,7 +113,9 @@ ps axu | grep ssh
 netstat -antp | grep <span class="number">2222</span>
 
 ssh -fN -<span class="constant">L </span><span class="number">4321</span><span class="symbol">:remote_host</span><span class="symbol">:</span><span class="number">22</span> bridge_user<span class="variable">@bridge_host</span>
-</code></pre><h2 id="<!-more->"><a id="more"></a></h2><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="shebang">#!/bin/bash </span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">true</span>;<span class="keyword">do</span> </span><br><span class="line">RET=`ps ax | grep <span class="string">"ssh -f -N -R 10000:localhost:22"</span> | grep -v <span class="string">"grep"</span>` </span><br><span class="line"><span class="keyword">if</span> [ <span class="string">"<span class="variable">$RET</span>"</span> = <span class="string">""</span> ]; <span class="keyword">then</span> </span><br><span class="line"><span class="built_in">echo</span> <span class="string">"restart ssh server"</span> </span><br><span class="line">ssh <span class="operator">-f</span> -N -R <span class="number">10000</span>:localhost:<span class="number">22</span> lyb@hahalee.jb51.net </span><br><span class="line"><span class="keyword">fi</span> </span><br><span class="line">sleep <span class="number">10</span> </span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>  
+</code></pre><a id="more"></a>
+<hr>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="shebang">#!/bin/bash </span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">true</span>;<span class="keyword">do</span> </span><br><span class="line">RET=`ps ax | grep <span class="string">"ssh -f -N -R 10000:localhost:22"</span> | grep -v <span class="string">"grep"</span>` </span><br><span class="line"><span class="keyword">if</span> [ <span class="string">"<span class="variable">$RET</span>"</span> = <span class="string">""</span> ]; <span class="keyword">then</span> </span><br><span class="line"><span class="built_in">echo</span> <span class="string">"restart ssh server"</span> </span><br><span class="line">ssh <span class="operator">-f</span> -N -R <span class="number">10000</span>:localhost:<span class="number">22</span> lyb@hahalee.jb51.net </span><br><span class="line"><span class="keyword">fi</span> </span><br><span class="line">sleep <span class="number">10</span> </span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
