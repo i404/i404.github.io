@@ -82,6 +82,73 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/2015/08/21/ssh-openwrt/" title="ssh openwrt" itemprop="url">ssh openwrt</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="i404" target="_blank" itemprop="author">i404</a>
+		
+  <p class="article-time">
+    <time datetime="2015-08-20T18:39:16.000Z" itemprop="datePublished"> 发表于 2015-08-21</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <pre><code>scp ~<span class="regexp">/.ssh/id</span>_rsa.pub root<span class="variable">@192</span>.<span class="number">168.8</span>.<span class="number">1</span><span class="symbol">:/etc/dropbear/authorized_keys</span>
+cat id_dsa.pub &gt;authorized_keys
+ssh -<span class="constant">NfR </span><span class="number">2222</span><span class="symbol">:localhost</span><span class="symbol">:</span><span class="number">22</span> httpd<span class="variable">@100</span>.<span class="number">100.100</span>.<span class="number">100</span> -p <span class="number">22</span>
+ps axu | grep ssh
+netstat -antp | grep <span class="number">2222</span>
+</code></pre>
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/命令/">命令</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/ssh/">ssh</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2015/08/21/ssh-openwrt/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/08/21/ssh-openwrt/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/2015/08/18/insert CV/" title="在OSX上安装CV" itemprop="url">在OSX上安装CV</a>
   </h1>
   <p class="article-author">By
@@ -337,71 +404,6 @@
 
 
 
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/05/05/wechat/" title="一次被微信坑的经历" itemprop="url">一次被微信坑的经历</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="i404" target="_blank" itemprop="author">i404</a>
-		
-  <p class="article-time">
-    <time datetime="2015-05-04T16:59:48.000Z" itemprop="datePublished"> 发表于 2015-05-05</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>今天突然发现自己的微信公众平台突然挂了，明明什么都没动，竟然就不能用了，甚是郁闷。于是慌忙登录SAE，准备一探究竟。</p>
-<p>我的平台是用 Python 的 <a href="http://werobot.readthedocs.org/en/latest/">WeRoBot</a> 框架做的，看错误代码大概的意思是数据格式不符合规范，我猜是微信公众平台的某些API更新了，所以可能有点不兼容了。还好那部分是实现自定义菜单的，本来就没什么用，注释掉以后发现又可以用了。那就等作者更新或者有兴趣了以后自己改一改吧。
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2015/05/05/wechat/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/随笔/">随笔</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/SAE/">SAE</a><a href="/tags/微信/">微信</a><a href="/tags/微信公众平台/">微信公众平台</a><a href="/tags/随笔/">随笔</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/05/05/wechat/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/05/05/wechat/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
 
   <nav id="page-nav" class="clearfix">
     <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next<span></span></a>
@@ -438,6 +440,10 @@
 		  
 		
 		  
+			<li><a href="/categories/命令/" title="命令">命令<sup>1</sup></a></li>
+		  
+		
+		  
 			<li><a href="/categories/数学/" title="数学">数学<sup>1</sup></a></li>
 		  
 		
@@ -457,7 +463,7 @@
   <div class="tagcloudlist">
     <p class="asidetitle">标签</p>
     <div class="tagcloudlist clearfix">
-       <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Monodb/" style="font-size: 10px;">Monodb</a> <a href="/tags/Monteor/" style="font-size: 10px;">Monteor</a> <a href="/tags/OSX/" style="font-size: 10px;">OSX</a> <a href="/tags/OpenCV/" style="font-size: 10px;">OpenCV</a> <a href="/tags/OpenWRT/" style="font-size: 10px;">OpenWRT</a> <a href="/tags/SAE/" style="font-size: 10px;">SAE</a> <a href="/tags/acm/" style="font-size: 20px;">acm</a> <a href="/tags/微信/" style="font-size: 10px;">微信</a> <a href="/tags/微信公众平台/" style="font-size: 10px;">微信公众平台</a> <a href="/tags/数学/" style="font-size: 10px;">数学</a> <a href="/tags/蔡勒公式/" style="font-size: 10px;">蔡勒公式</a> <a href="/tags/路由器/" style="font-size: 10px;">路由器</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+       <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Monodb/" style="font-size: 10px;">Monodb</a> <a href="/tags/Monteor/" style="font-size: 10px;">Monteor</a> <a href="/tags/OSX/" style="font-size: 10px;">OSX</a> <a href="/tags/OpenCV/" style="font-size: 10px;">OpenCV</a> <a href="/tags/OpenWRT/" style="font-size: 10px;">OpenWRT</a> <a href="/tags/SAE/" style="font-size: 10px;">SAE</a> <a href="/tags/acm/" style="font-size: 20px;">acm</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a> <a href="/tags/微信/" style="font-size: 10px;">微信</a> <a href="/tags/微信公众平台/" style="font-size: 10px;">微信公众平台</a> <a href="/tags/数学/" style="font-size: 10px;">数学</a> <a href="/tags/蔡勒公式/" style="font-size: 10px;">蔡勒公式</a> <a href="/tags/路由器/" style="font-size: 10px;">路由器</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
     </div>
   </div>
 
