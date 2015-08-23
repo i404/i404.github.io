@@ -100,10 +100,14 @@ cat id_dsa.pub &gt;authorized_keys
 ssh -<span class="constant">NfR </span><span class="number">2222</span><span class="symbol">:localhost</span><span class="symbol">:</span><span class="number">22</span> httpd<span class="variable">@100</span>.<span class="number">100.100</span>.<span class="number">100</span> -p <span class="number">22</span>
 ps axu | grep ssh
 netstat -antp | grep <span class="number">2222</span>
-</code></pre>
+
+ssh -fN -<span class="constant">L </span><span class="number">4321</span><span class="symbol">:remote_host</span><span class="symbol">:</span><span class="number">22</span> bridge_user<span class="variable">@bridge_host</span>
+</code></pre><h2 id="<!-more->">
         
         
         <p class="article-more-link">
+          
+            <a href="/2015/08/21/ssh-openwrt/#more">Read More</a>
           
        </p>
     </div>
