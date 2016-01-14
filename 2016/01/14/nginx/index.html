@@ -4,22 +4,26 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>i404&#39;s Blog</title>
+    <title>nginx | i404&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="i404">
     
 
     
-    <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="i404's Blog">
-<meta property="og:url" content="http://i404.github.io/index.html">
+    <meta name="description" content="nginx平台初探(100%)初探nginx架构(100%)众所周知，nginx性能高，而nginx的高性能与其架构是分不开的。那么nginx究竟是怎么样的呢？这一节我们先来初识一下nginx框架吧。
+nginx在启动后，在unix系统中会以daemon的方式在后台运行，后台进程包含一个master进程和多个worker进程。我们也可以手动地关掉后台模式，让nginx在前台运行，并且通过配置让ng">
+<meta property="og:type" content="article">
+<meta property="og:title" content="nginx">
+<meta property="og:url" content="http://i404.github.io/2016/01/14/nginx/index.html">
 <meta property="og:site_name" content="i404's Blog">
-<meta property="og:description">
+<meta property="og:description" content="nginx平台初探(100%)初探nginx架构(100%)众所周知，nginx性能高，而nginx的高性能与其架构是分不开的。那么nginx究竟是怎么样的呢？这一节我们先来初识一下nginx框架吧。
+nginx在启动后，在unix系统中会以daemon的方式在后台运行，后台进程包含一个master进程和多个worker进程。我们也可以手动地关掉后台模式，让nginx在前台运行，并且通过配置让ng">
+<meta property="og:updated_time" content="2016-01-14T05:23:30.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="i404's Blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="nginx">
+<meta name="twitter:description" content="nginx平台初探(100%)初探nginx架构(100%)众所周知，nginx性能高，而nginx的高性能与其架构是分不开的。那么nginx究竟是怎么样的呢？这一节我们先来初识一下nginx框架吧。
+nginx在启动后，在unix系统中会以daemon的方式在后台运行，后台进程包含一个master进程和多个worker进程。我们也可以手动地关掉后台模式，让nginx在前台运行，并且通过配置让ng">
 
     
     <link rel="alternative" href="/atom.xml" title="i404&#39;s Blog" type="application/atom+xml">
@@ -74,12 +78,10 @@
 </div>
     </header>
     <div id="container">
-      <div id="main">
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
   <h1 itemprop="name">
     
       <a href="/2016/01/14/nginx/" title="nginx" itemprop="url">nginx</a>
@@ -93,9 +95,16 @@
     
   </p>
 </header>
-    <div class="article-content">
-        
-        <h1 id="nginx平台初探(100%)">nginx平台初探(100%)</h1><h2 id="初探nginx架构(100%)">初探nginx架构(100%)</h2><p>众所周知，nginx性能高，而nginx的高性能与其架构是分不开的。那么nginx究竟是怎么样的呢？这一节我们先来初识一下nginx框架吧。</p>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#nginx平台初探(100%)"><span class="toc-number">1.</span> <span class="toc-text">nginx平台初探(100%)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#初探nginx架构(100%)"><span class="toc-number">1.1.</span> <span class="toc-text">初探nginx架构(100%)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#nginx基础概念(100%)"><span class="toc-number">1.2.</span> <span class="toc-text">nginx基础概念(100%)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基本数据结构(99%)"><span class="toc-number">1.3.</span> <span class="toc-text">基本数据结构(99%)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#nginx的请求处理"><span class="toc-number">1.4.</span> <span class="toc-text">nginx的请求处理</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_操作系统提供的机制（例如epoll,_kqueue等）产生相关的事件。"><span class="toc-number">2.</span> <span class="toc-text">) 操作系统提供的机制（例如epoll, kqueue等）产生相关的事件。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_接收和处理这些事件，如是接受到数据，则产生更高层的request对象。"><span class="toc-number">3.</span> <span class="toc-text">) 接收和处理这些事件，如是接受到数据，则产生更高层的request对象。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_处理request的header和body。"><span class="toc-number">4.</span> <span class="toc-text">) 处理request的header和body。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_产生响应，并发送回客户端。"><span class="toc-number">5.</span> <span class="toc-text">) 产生响应，并发送回客户端。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_完成request的处理。"><span class="toc-number">6.</span> <span class="toc-text">) 完成request的处理。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_重新初始化定时器及其他事件。"><span class="toc-number">7.</span> <span class="toc-text">) 重新初始化定时器及其他事件。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_初始化HTTP_Request（读取来自客户端的数据，生成HTTP_Request对象，该对象含有该请求所有的信息）。"><span class="toc-number">8.</span> <span class="toc-text">) 初始化HTTP Request（读取来自客户端的数据，生成HTTP Request对象，该对象含有该请求所有的信息）。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_处理请求头。"><span class="toc-number">9.</span> <span class="toc-text">) 处理请求头。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_处理请求体。"><span class="toc-number">10.</span> <span class="toc-text">) 处理请求体。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_如果有的话，调用与此请求（URL或者Location）关联的handler。"><span class="toc-number">11.</span> <span class="toc-text">) 如果有的话，调用与此请求（URL或者Location）关联的handler。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_依次调用各phase_handler进行处理。"><span class="toc-number">12.</span> <span class="toc-text">) 依次调用各phase handler进行处理。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_获取location配置。"><span class="toc-number">13.</span> <span class="toc-text">) 获取location配置。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_产生适当的响应。"><span class="toc-number">14.</span> <span class="toc-text">) 产生适当的响应。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_发送response_header。"><span class="toc-number">15.</span> <span class="toc-text">) 发送response header。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_发送response_body。"><span class="toc-number">16.</span> <span class="toc-text">) 发送response body。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_如果一个location里面有配置_random_index_on，那么随机选择一个文件，发送给客户端。"><span class="toc-number">17.</span> <span class="toc-text">) 如果一个location里面有配置  random_index  on，那么随机选择一个文件，发送给客户端。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_如果一个location里面有配置_index指令，那么发送index指令指明的文件，给客户端。"><span class="toc-number">18.</span> <span class="toc-text">) 如果一个location里面有配置 index指令，那么发送index指令指明的文件，给客户端。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_如果一个location里面有配置_autoindex_on，那么就发送请求地址对应的服务端路径下的文件列表给客户端。"><span class="toc-number">19.</span> <span class="toc-text">) 如果一个location里面有配置 autoindex  on，那么就发送请求地址对应的服务端路径下的文件列表给客户端。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_如果这个request对应的location上有设置gzip_static_on，那么就查找是否有对应的-gz文件存在，有的话，就发送这个给客户端（客户端支持gzip的情况下）。"><span class="toc-number">20.</span> <span class="toc-text">) 如果这个request对应的location上有设置gzip_static on，那么就查找是否有对应的.gz文件存在，有的话，就发送这个给客户端（客户端支持gzip的情况下）。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_请求的URI如果对应一个静态文件，static_module就发送静态文件的内容到客户端。"><span class="toc-number">21.</span> <span class="toc-text">) 请求的URI如果对应一个静态文件，static module就发送静态文件的内容到客户端。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_server-side_includes。"><span class="toc-number">22.</span> <span class="toc-text">) server-side includes。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_XSLT_filtering。"><span class="toc-number">23.</span> <span class="toc-text">) XSLT filtering。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_图像缩放之类的。"><span class="toc-number">24.</span> <span class="toc-text">) 图像缩放之类的。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_gzip压缩。"><span class="toc-number">25.</span> <span class="toc-text">) gzip压缩。</span></a></li></ol>
+		
+		</div>
+		
+		<h1 id="nginx平台初探(100%)">nginx平台初探(100%)</h1><h2 id="初探nginx架构(100%)">初探nginx架构(100%)</h2><p>众所周知，nginx性能高，而nginx的高性能与其架构是分不开的。那么nginx究竟是怎么样的呢？这一节我们先来初识一下nginx框架吧。</p>
 <p>nginx在启动后，在unix系统中会以daemon的方式在后台运行，后台进程包含一个master进程和多个worker进程。我们也可以手动地关掉后台模式，让nginx在前台运行，并且通过配置让nginx取消master进程，从而可以使nginx以单进程方式运行。很显然，生产环境下我们肯定不会这么做，所以关闭后台模式，一般是用来调试用的，在后面的章节里面，我们会详细地讲解如何调试nginx。所以，我们可以看到，nginx是以多进程的方式来工作的，当然nginx也是支持多线程的方式的，只是我们主流的方式还是多进程的方式，也是nginx的默认方式。nginx采用多进程的方式有诸多好处，所以我就主要讲解nginx的多进程模式吧。</p>
 <p>刚才讲到，nginx在启动后，会有一个master进程和多个worker进程。master进程主要用来管理worker进程，包含：接收来自外界的信号，向各worker进程发送信号，监控worker进程的运行状态，当worker进程退出后(异常情况下)，会自动重新启动新的worker进程。而基本的网络事件，则是放在worker进程中来处理了。多个worker进程之间是对等的，他们同等竞争来自客户端的请求，各进程互相之间是独立的。一个请求，只可能在一个worker进程中处理，一个worker进程，不可能处理其它进程的请求。worker进程的个数是可以设置的，一般我们会设置与机器cpu核数一致，这里面的原因与nginx的进程模型以及事件处理模型是分不开的。nginx的进程模型，可以由下图来表示：</p>
 <p>.. image:: <a href="http://tengine.taobao.org/book/_images/chapter-2-1.PNG" target="_blank" rel="external">http://tengine.taobao.org/book/_images/chapter-2-1.PNG</a><br>    :alt: nginx进程模型<br>    :align: center</p>
@@ -407,14 +416,9 @@ struct ngx_pool_s {
 <p>这里列举几个常见的filter模块，例如：</p>
 <h1 id=")_server-side_includes。">) server-side includes。</h1><h1 id=")_XSLT_filtering。">) XSLT filtering。</h1><h1 id=")_图像缩放之类的。">) 图像缩放之类的。</h1><h1 id=")_gzip压缩。">) gzip压缩。</h1><p>在所有的filter中，有几个filter模块需要关注一下。按照调用的顺序依次说明如下：</p>
 <p>:write: 写输出到客户端，实际上是写到连接对应的socket上。<br>:postpone: 这个filter是负责subrequest的，也就是子请求的。<br>:copy: 将一些需要复制的buf(文件或者内存)重新复制一份然后交给剩余的body filter处理。</p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
+  
+	</div>
+		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
 <div class="article-categories">
@@ -432,310 +436,47 @@ struct ngx_pool_s {
 
 
 
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://i404.github.io/2016/01/14/nginx/" data-title="nginx | i404&#39;s Blog" data-tsina="2179056287" class="share clearfix">
+	  </div>
+	
+	</div>
 
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2016/01/14/nginx/#comments" class="ds-thread-count comments-count-link" data-thread-key="2016/01/14/nginx/" data-count-type="comments">&nbsp;</a>
-	
-</div>
 
 </footer>
 
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/10/01/git_del_files/" title="git彻底删除文件" itemprop="url">git彻底删除文件</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="i404" target="_blank" itemprop="author">i404</a>
-		
-  <p class="article-time">
-    <time datetime="2015-10-01T12:24:27.000Z" itemprop="datePublished"> 发表于 2015-10-01</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p><img src="https://git-scm.com/images/logo@2x.png" class="img-logo"></p>
-<pre><code><span class="comment">git</span> <span class="comment">filter</span><span class="literal">-</span><span class="comment">branch</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">index</span><span class="literal">-</span><span class="comment">filter</span> <span class="comment">'git</span> <span class="comment">rm</span> <span class="literal">-</span><span class="comment">r</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">cached</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">ignore</span><span class="literal">-</span><span class="comment">unmatch</span> <span class="comment">path/to/your/file'</span> <span class="comment">HEAD</span> 
-<span class="comment">git</span> <span class="comment">push</span> <span class="comment">origin</span> <span class="comment">master</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">force</span> 
-<span class="comment">rm</span> <span class="literal">-</span><span class="comment">rf</span> <span class="string">.</span><span class="comment">git/refs/original/</span> 
-<span class="comment">git</span> <span class="comment">reflog</span> <span class="comment">expire</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">expire=now</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">all</span> 
-<span class="comment">git</span> <span class="comment">gc</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">prune=now</span> 
-<span class="comment">git</span> <span class="comment">gc</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">aggressive</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">prune=now</span> 
-</code></pre><p>参考了<a href="http://dalibornasevic.com/posts/2-permanently-remove-files-and-folders-from-a-git-repository" target="_blank" rel="external">这篇博客</a></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/git/">git</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/git/">git</a><a href="/tags/git-gc/">git gc</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
+   	       
+	</article>
 	
-	  	<span></span>
-		<a href="/2015/10/01/git_del_files/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/10/01/git_del_files/" data-count-type="comments">&nbsp;</a>
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2015/10/01/git_del_files/"  title="git彻底删除文件">
+ <strong>下一篇：</strong><br/> 
+ <span>git彻底删除文件
+</span>
+</a>
+</div>
+
+</nav>
+
 	
-</div>
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2016/01/14/nginx/" data-title="nginx" data-url="http://i404.github.io/2016/01/14/nginx/"></div>
+</section>
 
-</footer>
 
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/08/21/ssh-openwrt/" title="ssh openwrt" itemprop="url">ssh openwrt</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="i404" target="_blank" itemprop="author">i404</a>
-		
-  <p class="article-time">
-    <time datetime="2015-08-20T18:39:16.000Z" itemprop="datePublished"> 发表于 2015-08-21</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <pre><code>scp ~<span class="regexp">/.ssh/id</span>_rsa.pub root<span class="variable">@192</span>.<span class="number">168.8</span>.<span class="number">1</span><span class="symbol">:/etc/dropbear/authorized_keys</span>
-cat id_dsa.pub &gt;authorized_keys
-ssh -<span class="constant">NfR </span><span class="number">2222</span><span class="symbol">:localhost</span><span class="symbol">:</span><span class="number">22</span> httpd<span class="variable">@100</span>.<span class="number">100.100</span>.<span class="number">100</span> -p <span class="number">22</span>
-ps axu | grep ssh
-netstat -antp | grep <span class="number">2222</span>
-
-ssh -fN -<span class="constant">L </span><span class="number">4321</span><span class="symbol">:remote_host</span><span class="symbol">:</span><span class="number">22</span> bridge_user<span class="variable">@bridge_host</span>
-</code></pre>
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2015/08/21/ssh-openwrt/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/命令/">命令</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/ssh/">ssh</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/08/21/ssh-openwrt/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/08/21/ssh-openwrt/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/08/18/insert CV/" title="在OSX上安装CV" itemprop="url">在OSX上安装CV</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="i404" target="_blank" itemprop="author">i404</a>
-		
-  <p class="article-time">
-    <time datetime="2015-08-18T13:00:00.000Z" itemprop="datePublished"> 发表于 2015-08-18</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p><img src="http://7xipqt.com1.z0.glb.clouddn.com/OpenCV_Logo_with_text.png" class="img-logo" /></p>
-<h2 id="OpenCV的安装">OpenCV的安装</h2><p>可以下载源码然后用cmake编译，也可以直接用<code>brew</code>安装。
-        
-        
-        <p class="article-more-link">
-          
-            <a href="/2015/08/18/insert CV/#more">Read More</a>
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/OpenCV/">OpenCV</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/OSX/">OSX</a><a href="/tags/OpenCV/">OpenCV</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/08/18/insert CV/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/08/18/insert CV/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/08/18/meteor_tips/" title="Meteor Mongodb" itemprop="url">Meteor Mongodb</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="i404" target="_blank" itemprop="author">i404</a>
-		
-  <p class="article-time">
-    <time datetime="2015-08-18T04:00:00.000Z" itemprop="datePublished"> 发表于 2015-08-18</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongod --auth --bind_ip <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span> --dbpath path</span><br></pre></td></tr></table></figure>
-<hr>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">BIND_IP=<span class="number">127.0</span>.<span class="number">0.1</span> meteor run</span><br></pre></td></tr></table></figure>
-<hr>
-<p>每次重开一个终端或主机重启的时候，环境变量会还原，需要重新导入。<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> MONGO_URL=mongodb://user:passwd@ip:port/database</span><br></pre></td></tr></table></figure></p>
-<hr>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pymongo</span><br><span class="line">client = pymongo.MongoClient(<span class="string">'mongodb://user:passwd@ip:port/database'</span>)</span><br></pre></td></tr></table></figure>
-<hr>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongo -u user -p passwd ip:port/database</span><br></pre></td></tr></table></figure>
-<hr>
-<p>mongo shell 炒鸡管理员<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">use admin</span><br><span class="line">db.createUser(</span><br><span class="line">   &#123;</span><br><span class="line">     user: <span class="string">"appAdmin"</span>,</span><br><span class="line">     pwd: <span class="string">"password"</span>,</span><br><span class="line">     roles:</span><br><span class="line">       [</span><br><span class="line">         &#123; role: <span class="string">"readWrite"</span>, db: <span class="string">"config"</span> &#125;,</span><br><span class="line">         <span class="string">"clusterAdmin"</span></span><br><span class="line">       ]</span><br><span class="line">   &#125;</span><br><span class="line">)</span><br></pre></td></tr></table></figure></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/Meteor/">Meteor</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/Monodb/">Monodb</a><a href="/tags/Monteor/">Monteor</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="/2015/08/18/meteor_tips/#comments" class="ds-thread-count comments-count-link" data-thread-key="2015/08/18/meteor_tips/" data-count-type="comments">&nbsp;</a>
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-
-  <nav id="page-nav" class="clearfix">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next<span></span></a>
-  </nav>
-
-</div>
+</div>  
       <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#nginx平台初探(100%)"><span class="toc-number">1.</span> <span class="toc-text">nginx平台初探(100%)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#初探nginx架构(100%)"><span class="toc-number">1.1.</span> <span class="toc-text">初探nginx架构(100%)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#nginx基础概念(100%)"><span class="toc-number">1.2.</span> <span class="toc-text">nginx基础概念(100%)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基本数据结构(99%)"><span class="toc-number">1.3.</span> <span class="toc-text">基本数据结构(99%)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#nginx的请求处理"><span class="toc-number">1.4.</span> <span class="toc-text">nginx的请求处理</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_操作系统提供的机制（例如epoll,_kqueue等）产生相关的事件。"><span class="toc-number">2.</span> <span class="toc-text">) 操作系统提供的机制（例如epoll, kqueue等）产生相关的事件。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_接收和处理这些事件，如是接受到数据，则产生更高层的request对象。"><span class="toc-number">3.</span> <span class="toc-text">) 接收和处理这些事件，如是接受到数据，则产生更高层的request对象。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_处理request的header和body。"><span class="toc-number">4.</span> <span class="toc-text">) 处理request的header和body。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_产生响应，并发送回客户端。"><span class="toc-number">5.</span> <span class="toc-text">) 产生响应，并发送回客户端。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_完成request的处理。"><span class="toc-number">6.</span> <span class="toc-text">) 完成request的处理。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_重新初始化定时器及其他事件。"><span class="toc-number">7.</span> <span class="toc-text">) 重新初始化定时器及其他事件。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_初始化HTTP_Request（读取来自客户端的数据，生成HTTP_Request对象，该对象含有该请求所有的信息）。"><span class="toc-number">8.</span> <span class="toc-text">) 初始化HTTP Request（读取来自客户端的数据，生成HTTP Request对象，该对象含有该请求所有的信息）。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_处理请求头。"><span class="toc-number">9.</span> <span class="toc-text">) 处理请求头。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_处理请求体。"><span class="toc-number">10.</span> <span class="toc-text">) 处理请求体。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_如果有的话，调用与此请求（URL或者Location）关联的handler。"><span class="toc-number">11.</span> <span class="toc-text">) 如果有的话，调用与此请求（URL或者Location）关联的handler。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_依次调用各phase_handler进行处理。"><span class="toc-number">12.</span> <span class="toc-text">) 依次调用各phase handler进行处理。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_获取location配置。"><span class="toc-number">13.</span> <span class="toc-text">) 获取location配置。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_产生适当的响应。"><span class="toc-number">14.</span> <span class="toc-text">) 产生适当的响应。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_发送response_header。"><span class="toc-number">15.</span> <span class="toc-text">) 发送response header。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_发送response_body。"><span class="toc-number">16.</span> <span class="toc-text">) 发送response body。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_如果一个location里面有配置_random_index_on，那么随机选择一个文件，发送给客户端。"><span class="toc-number">17.</span> <span class="toc-text">) 如果一个location里面有配置  random_index  on，那么随机选择一个文件，发送给客户端。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_如果一个location里面有配置_index指令，那么发送index指令指明的文件，给客户端。"><span class="toc-number">18.</span> <span class="toc-text">) 如果一个location里面有配置 index指令，那么发送index指令指明的文件，给客户端。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_如果一个location里面有配置_autoindex_on，那么就发送请求地址对应的服务端路径下的文件列表给客户端。"><span class="toc-number">19.</span> <span class="toc-text">) 如果一个location里面有配置 autoindex  on，那么就发送请求地址对应的服务端路径下的文件列表给客户端。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_如果这个request对应的location上有设置gzip_static_on，那么就查找是否有对应的-gz文件存在，有的话，就发送这个给客户端（客户端支持gzip的情况下）。"><span class="toc-number">20.</span> <span class="toc-text">) 如果这个request对应的location上有设置gzip_static on，那么就查找是否有对应的.gz文件存在，有的话，就发送这个给客户端（客户端支持gzip的情况下）。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_请求的URI如果对应一个静态文件，static_module就发送静态文件的内容到客户端。"><span class="toc-number">21.</span> <span class="toc-text">) 请求的URI如果对应一个静态文件，static module就发送静态文件的内容到客户端。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_server-side_includes。"><span class="toc-number">22.</span> <span class="toc-text">) server-side includes。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_XSLT_filtering。"><span class="toc-number">23.</span> <span class="toc-text">) XSLT filtering。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_图像缩放之类的。"><span class="toc-number">24.</span> <span class="toc-text">) 图像缩放之类的。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#)_gzip压缩。"><span class="toc-number">25.</span> <span class="toc-text">) gzip压缩。</span></a></li></ol>
+ 
+  </div>
 
 <div id="asidepart">
 <div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
@@ -890,12 +631,69 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
   });
 });
 </script>
 
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#nothing"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
 
 
 
@@ -1014,4 +812,4 @@ _ts(option);
 <!-- Tiny_search End -->
 
   </body>
- </html>
+</html>
