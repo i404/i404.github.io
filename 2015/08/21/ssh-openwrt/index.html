@@ -13,26 +13,26 @@
     
     <meta name="description" content="scp ~/.ssh/id_rsa.pub root@192.168.8.1:/etc/dropbear/authorized_keys
 cat id_dsa.pub &amp;gt;authorized_keys
-ssh -NfR 2222:localhost:22 httpd@100.100.100.100 -p 22
+ssh -NfR bridge_port:remote_ip:remote_port bridge_user@bridge_host -p 22
 ps axu | grep ssh
-netstat -antp | grep 22">
+netst">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ssh openwrt">
 <meta property="og:url" content="http://i404.github.io/2015/08/21/ssh-openwrt/index.html">
 <meta property="og:site_name" content="i404's Blog">
 <meta property="og:description" content="scp ~/.ssh/id_rsa.pub root@192.168.8.1:/etc/dropbear/authorized_keys
 cat id_dsa.pub &amp;gt;authorized_keys
-ssh -NfR 2222:localhost:22 httpd@100.100.100.100 -p 22
+ssh -NfR bridge_port:remote_ip:remote_port bridge_user@bridge_host -p 22
 ps axu | grep ssh
-netstat -antp | grep 22">
-<meta property="og:updated_time" content="2015-08-23T18:21:08.000Z">
+netst">
+<meta property="og:updated_time" content="2016-03-29T16:43:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ssh openwrt">
 <meta name="twitter:description" content="scp ~/.ssh/id_rsa.pub root@192.168.8.1:/etc/dropbear/authorized_keys
 cat id_dsa.pub &amp;gt;authorized_keys
-ssh -NfR 2222:localhost:22 httpd@100.100.100.100 -p 22
+ssh -NfR bridge_port:remote_ip:remote_port bridge_user@bridge_host -p 22
 ps axu | grep ssh
-netstat -antp | grep 22">
+netst">
 
     
     <link rel="alternative" href="/atom.xml" title="i404&#39;s Blog" type="application/atom+xml">
@@ -108,7 +108,7 @@ netstat -antp | grep 22">
 		
 		<pre><code>scp ~<span class="regexp">/.ssh/id</span>_rsa.pub root<span class="variable">@192</span>.<span class="number">168.8</span>.<span class="number">1</span><span class="symbol">:/etc/dropbear/authorized_keys</span>
 cat id_dsa.pub &gt;authorized_keys
-ssh -<span class="constant">NfR </span><span class="number">2222</span><span class="symbol">:localhost</span><span class="symbol">:</span><span class="number">22</span> httpd<span class="variable">@100</span>.<span class="number">100.100</span>.<span class="number">100</span> -p <span class="number">22</span>
+ssh -<span class="constant">NfR </span><span class="symbol">bridge_port:</span><span class="symbol">remote_ip:</span>remote_port bridge_user<span class="variable">@bridge_host</span> -p <span class="number">22</span>
 ps axu | grep ssh
 netstat -antp | grep <span class="number">2222</span>
 
